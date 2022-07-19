@@ -1,0 +1,1730 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     82914,       1722]
+NotebookOptionsPosition[     82035,       1698]
+NotebookOutlinePosition[     82379,       1713]
+CellTagsIndexPosition[     82336,       1710]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"proof", "=", 
+  RowBox[{"FindEquationalProof", "[", 
+   RowBox[{
+    RowBox[{"a", "\[Equal]", "c"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"a", "\[Equal]", "b"}], ",", 
+      RowBox[{"b", "\[Equal]", "c"}]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.867220233059043*^9, 3.8672202438839717`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"faadb4f9-ca44-4978-a1eb-a278321e25f6"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ProofObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            GraphicsBox[{{
+               Directive[
+                Opacity[0.7], 
+                Hue[0.6, 0.7, 0.5]], 
+               Directive[
+                RGBColor[0.368417, 0.506779, 0.709798]], {
+                Arrowheads[{{0.1, 0.8, {
+                    GraphicsBox[
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1,
+                     0}, {0, 1, 
+                    0}}}, {{{-0.18091062394603785`, -8.881784197001252*^-16}, \
+{-0.9077234401349075, 
+                    0.22712984822934246`}, {-0.8168768971332212, \
+-8.881784197001252*^-16}}, {{-1., -0.31249915682967977`}, \
+{-0.8749949409780782, -8.881784197001252*^-16}, {-1., 0.3124991568296789}, {
+                    0., -8.881784197001252*^-16}}}]], 0.8749949409780782}}}], 
+                ArrowBox[{{0., 1.}, {1., 0.5}}]}, {
+                Arrowheads[{{0.1, 0.8, {
+                    GraphicsBox[
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1,
+                     0}, {0, 1, 
+                    0}}}, {{{-0.18091062394603785`, -8.881784197001252*^-16}, \
+{-0.9077234401349075, 
+                    0.22712984822934246`}, {-0.8168768971332212, \
+-8.881784197001252*^-16}}, {{-1., -0.31249915682967977`}, \
+{-0.8749949409780782, -8.881784197001252*^-16}, {-1., 0.3124991568296789}, {
+                    0., -8.881784197001252*^-16}}}]], 0.8749949409780782}}}], 
+                ArrowBox[{{1., 1.}, {1., 0.5}}]}, {
+                Arrowheads[{{0.1, 0.8, {
+                    GraphicsBox[
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1,
+                     0}, {0, 1, 
+                    0}}}, {{{-0.18091062394603785`, -8.881784197001252*^-16}, \
+{-0.9077234401349075, 
+                    0.22712984822934246`}, {-0.8168768971332212, \
+-8.881784197001252*^-16}}, {{-1., -0.31249915682967977`}, \
+{-0.8749949409780782, -8.881784197001252*^-16}, {-1., 0.3124991568296789}, {
+                    0., -8.881784197001252*^-16}}}]], 0.8749949409780782}}}], 
+                ArrowBox[{{0., 0.5}, {0., 0.}}]}, {
+                Arrowheads[{{0.1, 0.8, {
+                    GraphicsBox[
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1,
+                     0}, {0, 1, 
+                    0}}}, {{{-0.18091062394603785`, -8.881784197001252*^-16}, \
+{-0.9077234401349075, 
+                    0.22712984822934246`}, {-0.8168768971332212, \
+-8.881784197001252*^-16}}, {{-1., -0.31249915682967977`}, \
+{-0.8749949409780782, -8.881784197001252*^-16}, {-1., 0.3124991568296789}, {
+                    0., -8.881784197001252*^-16}}}]], 0.8749949409780782}}}], 
+                ArrowBox[{{1., 0.5}, {0., 0.}}]}}, {
+               Directive[
+                Hue[0.6, 0.2, 0.8], 
+                EdgeForm[
+                 Directive[
+                  GrayLevel[0], 
+                  Opacity[0.7]]]], 
+               Directive[
+                RGBColor[0.368417, 0.506779, 0.709798]], 
+               TagBox[
+                TooltipBox[
+                 DiskBox[{0., 1.}, 0.033036990164056895`], 
+                 TagBox[
+                  GridBox[{{"\"Axiom 1\""}, {
+                    RowBox[{"b", "\[Equal]", "a"}]}}, 
+                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                   DefaultBaseStyle -> "Column", 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                  "Column"]], Annotation[#, 
+                 Column[{"Axiom 1", $CellContext`b == $CellContext`a}], 
+                 "Tooltip"]& ], 
+               TagBox[
+                TooltipBox[
+                 DiskBox[{1., 1.}, 0.033036990164056895`], 
+                 TagBox[
+                  GridBox[{{"\"Axiom 2\""}, {
+                    RowBox[{"b", "\[Equal]", "c"}]}}, 
+                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                   DefaultBaseStyle -> "Column", 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                  "Column"]], Annotation[#, 
+                 Column[{"Axiom 2", $CellContext`b == $CellContext`c}], 
+                 "Tooltip"]& ], 
+               TagBox[
+                TooltipBox[
+                 DiskBox[{0., 0.5}, 0.033036990164056895`], 
+                 TagBox[
+                  GridBox[{{"\"Hypothesis 1\""}, {
+                    RowBox[{"a", "\[Equal]", "c"}]}}, 
+                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                   DefaultBaseStyle -> "Column", 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                  "Column"]], Annotation[#, 
+                 Column[{"Hypothesis 1", $CellContext`a == $CellContext`c}], 
+                 "Tooltip"]& ], 
+               TagBox[
+                TooltipBox[
+                 DiskBox[{1., 0.5}, 0.033036990164056895`], 
+                 TagBox[
+                  GridBox[{{"\"Substitution Lemma 1\""}, {
+                    RowBox[{"a", "\[Equal]", "c"}]}}, 
+                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                   DefaultBaseStyle -> "Column", 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                  "Column"]], Annotation[#, 
+                 
+                 Column[{
+                  "Substitution Lemma 1", $CellContext`a == $CellContext`c}], 
+                 "Tooltip"]& ], 
+               TagBox[
+                TooltipBox[
+                 DiskBox[{0., 0.}, 0.033036990164056895`], 
+                 TagBox[
+                  
+                  GridBox[{{"\"Conclusion 1\""}, {"True"}}, 
+                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                   DefaultBaseStyle -> "Column", 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                  "Column"]], Annotation[#, 
+                 Column[{"Conclusion 1", True}], "Tooltip"]& ]}}, {
+             BaseStyle -> RGBColor[0.368417, 0.506779, 0.709798], FormatType -> 
+              TraditionalForm, Frame -> True, FrameStyle -> Directive[
+                Thickness[Tiny], 
+                RGBColor[0.368417, 0.506779, 0.709798]], FrameTicks -> None, 
+              ImageSize -> 
+              Dynamic[{
+                Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                 AbsoluteCurrentValue[Magnification]}], PlotRangePadding -> 
+              Scaled[0.15]}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Logic: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"EquationalLogic\"", "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Steps: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["5", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Theorem: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"a", "\[Equal]", "c"}], Short[#, 1]& ], 
+                  "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            GraphicsBox[{{
+               Directive[
+                Opacity[0.7], 
+                Hue[0.6, 0.7, 0.5]], 
+               Directive[
+                RGBColor[0.368417, 0.506779, 0.709798]], {
+                Arrowheads[{{0.1, 0.8, {
+                    GraphicsBox[
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1,
+                     0}, {0, 1, 
+                    0}}}, {{{-0.18091062394603785`, -8.881784197001252*^-16}, \
+{-0.9077234401349075, 
+                    0.22712984822934246`}, {-0.8168768971332212, \
+-8.881784197001252*^-16}}, {{-1., -0.31249915682967977`}, \
+{-0.8749949409780782, -8.881784197001252*^-16}, {-1., 0.3124991568296789}, {
+                    0., -8.881784197001252*^-16}}}]], 0.8749949409780782}}}], 
+                ArrowBox[{{0., 1.}, {1., 0.5}}]}, {
+                Arrowheads[{{0.1, 0.8, {
+                    GraphicsBox[
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1,
+                     0}, {0, 1, 
+                    0}}}, {{{-0.18091062394603785`, -8.881784197001252*^-16}, \
+{-0.9077234401349075, 
+                    0.22712984822934246`}, {-0.8168768971332212, \
+-8.881784197001252*^-16}}, {{-1., -0.31249915682967977`}, \
+{-0.8749949409780782, -8.881784197001252*^-16}, {-1., 0.3124991568296789}, {
+                    0., -8.881784197001252*^-16}}}]], 0.8749949409780782}}}], 
+                ArrowBox[{{1., 1.}, {1., 0.5}}]}, {
+                Arrowheads[{{0.1, 0.8, {
+                    GraphicsBox[
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1,
+                     0}, {0, 1, 
+                    0}}}, {{{-0.18091062394603785`, -8.881784197001252*^-16}, \
+{-0.9077234401349075, 
+                    0.22712984822934246`}, {-0.8168768971332212, \
+-8.881784197001252*^-16}}, {{-1., -0.31249915682967977`}, \
+{-0.8749949409780782, -8.881784197001252*^-16}, {-1., 0.3124991568296789}, {
+                    0., -8.881784197001252*^-16}}}]], 0.8749949409780782}}}], 
+                ArrowBox[{{0., 0.5}, {0., 0.}}]}, {
+                Arrowheads[{{0.1, 0.8, {
+                    GraphicsBox[
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1,
+                     0}, {0, 1, 
+                    0}}}, {{{-0.18091062394603785`, -8.881784197001252*^-16}, \
+{-0.9077234401349075, 
+                    0.22712984822934246`}, {-0.8168768971332212, \
+-8.881784197001252*^-16}}, {{-1., -0.31249915682967977`}, \
+{-0.8749949409780782, -8.881784197001252*^-16}, {-1., 0.3124991568296789}, {
+                    0., -8.881784197001252*^-16}}}]], 0.8749949409780782}}}], 
+                ArrowBox[{{1., 0.5}, {0., 0.}}]}}, {
+               Directive[
+                Hue[0.6, 0.2, 0.8], 
+                EdgeForm[
+                 Directive[
+                  GrayLevel[0], 
+                  Opacity[0.7]]]], 
+               Directive[
+                RGBColor[0.368417, 0.506779, 0.709798]], 
+               TagBox[
+                TooltipBox[
+                 DiskBox[{0., 1.}, 0.033036990164056895`], 
+                 TagBox[
+                  GridBox[{{"\"Axiom 1\""}, {
+                    RowBox[{"b", "\[Equal]", "a"}]}}, 
+                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                   DefaultBaseStyle -> "Column", 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                  "Column"]], Annotation[#, 
+                 Column[{"Axiom 1", $CellContext`b == $CellContext`a}], 
+                 "Tooltip"]& ], 
+               TagBox[
+                TooltipBox[
+                 DiskBox[{1., 1.}, 0.033036990164056895`], 
+                 TagBox[
+                  GridBox[{{"\"Axiom 2\""}, {
+                    RowBox[{"b", "\[Equal]", "c"}]}}, 
+                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                   DefaultBaseStyle -> "Column", 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                  "Column"]], Annotation[#, 
+                 Column[{"Axiom 2", $CellContext`b == $CellContext`c}], 
+                 "Tooltip"]& ], 
+               TagBox[
+                TooltipBox[
+                 DiskBox[{0., 0.5}, 0.033036990164056895`], 
+                 TagBox[
+                  GridBox[{{"\"Hypothesis 1\""}, {
+                    RowBox[{"a", "\[Equal]", "c"}]}}, 
+                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                   DefaultBaseStyle -> "Column", 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                  "Column"]], Annotation[#, 
+                 Column[{"Hypothesis 1", $CellContext`a == $CellContext`c}], 
+                 "Tooltip"]& ], 
+               TagBox[
+                TooltipBox[
+                 DiskBox[{1., 0.5}, 0.033036990164056895`], 
+                 TagBox[
+                  GridBox[{{"\"Substitution Lemma 1\""}, {
+                    RowBox[{"a", "\[Equal]", "c"}]}}, 
+                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                   DefaultBaseStyle -> "Column", 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                  "Column"]], Annotation[#, 
+                 
+                 Column[{
+                  "Substitution Lemma 1", $CellContext`a == $CellContext`c}], 
+                 "Tooltip"]& ], 
+               TagBox[
+                TooltipBox[
+                 DiskBox[{0., 0.}, 0.033036990164056895`], 
+                 TagBox[
+                  
+                  GridBox[{{"\"Conclusion 1\""}, {"True"}}, 
+                   GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                   DefaultBaseStyle -> "Column", 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                  "Column"]], Annotation[#, 
+                 Column[{"Conclusion 1", True}], "Tooltip"]& ]}}, {
+             BaseStyle -> RGBColor[0.368417, 0.506779, 0.709798], FormatType -> 
+              TraditionalForm, Frame -> True, FrameStyle -> Directive[
+                Thickness[Tiny], 
+                RGBColor[0.368417, 0.506779, 0.709798]], FrameTicks -> None, 
+              ImageSize -> 
+              Dynamic[{
+                Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                 AbsoluteCurrentValue[Magnification]}], PlotRangePadding -> 
+              Scaled[0.15]}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Logic: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"EquationalLogic\"", "SummaryItem"]}], 
+               RowBox[{
+                 TagBox["\"Steps: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["5", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Theorem: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"a", "\[Equal]", "c"}], Short[#, 1]& ], 
+                  "SummaryItem"]}], "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"Axioms: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{
+                    RowBox[{"a", "\[Equal]", "b"}], "&&", 
+                    RowBox[{"b", "\[Equal]", "c"}]}], Short[#, 1]& ], 
+                  "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ProofObject["EquationalLogic", $CellContext`a == $CellContext`c, 
+   And[$CellContext`a == $CellContext`b, $CellContext`b == $CellContext`c], {{
+     "Axiom", 1} -> 
+    Association[
+     "Statement" -> $CellContext`b == $CellContext`a, "Proof" -> 
+      Association[]], {"Axiom", 2} -> 
+    Association[
+     "Statement" -> $CellContext`b == $CellContext`c, "Proof" -> 
+      Association[]], {"Hypothesis", 1} -> 
+    Association[
+     "Statement" -> $CellContext`a == $CellContext`c, "Proof" -> 
+      Association[]], {"SubstitutionLemma", 1} -> 
+    Association[
+     "Statement" -> $CellContext`a == $CellContext`c, "Proof" -> 
+      Association[
+       "Input" -> {"Axiom", 2}, "Position" -> 1, "Construct" -> {"Axiom", 1}, 
+        "Orientation" -> 1, "Rule" -> ($CellContext`b -> $CellContext`a), 
+        "OutputExpression" -> $CellContext`a == $CellContext`c]], {
+     "Conclusion", 1} -> 
+    Association[
+     "Statement" -> True, "Proof" -> 
+      Association[
+       "Input" -> {"Hypothesis", 1}, "Position" -> 1, 
+        "Construct" -> {"SubstitutionLemma", 1}, "Orientation" -> 1, 
+        "Rule" -> ($CellContext`a -> $CellContext`c), "OutputExpression" -> 
+        True]]}],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8672202460979548`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"286220de-2c54-4b34-aa92-235f76a48001"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"proof", "[", "\"\<ProofGraph\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8672202518401394`*^9, 3.8672202580720997`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"52f703fe-1c7c-423a-9f0a-48e5883d0982"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{
+      "Axiom 1", "Axiom 2", "Hypothesis 1", "Substitution Lemma 1", 
+       "Conclusion 1"}, {{{2, 4}, {1, 4}, {3, 5}, {4, 5}}, Null}, {
+      EdgeStyle -> {DirectedEdge["Hypothesis 1", "Conclusion 1"] -> RGBColor[
+           Rational[167, 255], 
+           Rational[167, 255], 
+           Rational[167, 255]], 
+         DirectedEdge["Substitution Lemma 1", "Conclusion 1"] -> Directive[
+           Dashing[{Small, Small}], 
+           RGBColor[
+            Rational[167, 255], 
+            Rational[167, 255], 
+            Rational[167, 255]]], 
+         DirectedEdge["Axiom 1", "Substitution Lemma 1"] -> Directive[
+           Dashing[{Small, Small}], 
+           RGBColor[
+            Rational[167, 255], 
+            Rational[167, 255], 
+            Rational[167, 255]]], 
+         DirectedEdge["Axiom 2", "Substitution Lemma 1"] -> RGBColor[
+           Rational[167, 255], 
+           Rational[167, 255], 
+           Rational[167, 255]]}, GraphLayout -> "LayeredDigraphEmbedding", 
+       Properties -> {
+        "Axiom 1" -> {
+          Tooltip -> Column[{"Axiom 1", $CellContext`b == $CellContext`a}]}, 
+         "Axiom 2" -> {
+          Tooltip -> Column[{"Axiom 2", $CellContext`b == $CellContext`c}]}, 
+         "Conclusion 1" -> {Tooltip -> Column[{"Conclusion 1", True}]}, 
+         "Hypothesis 1" -> {
+          Tooltip -> Column[{
+             "Hypothesis 1", $CellContext`a == $CellContext`c}]}, 
+         "Substitution Lemma 1" -> {
+          Tooltip -> Column[{
+             "Substitution Lemma 1", $CellContext`a == $CellContext`c}]}}, 
+       VertexLabels -> {Automatic}, 
+       VertexShapeFunction -> {
+        "Hypothesis 1" -> "Diamond", "Conclusion 1" -> "Square", 
+         "Substitution Lemma 1" -> "Circle", "Axiom 2" -> "FiveDown", 
+         "Axiom 1" -> "FiveDown"}, 
+       VertexSize -> {{"Scaled", 0.046721359549995796`}}, 
+       VertexStyle -> {"Substitution Lemma 1" -> Directive[
+           RGBColor[
+            Rational[15, 17], 
+            Rational[52, 85], 
+            Rational[12, 85]], 
+           EdgeForm[]], "Hypothesis 1" -> Directive[
+           RGBColor[
+            Rational[146, 255], 
+            Rational[10, 17], 0], 
+           EdgeForm[]], "Conclusion 1" -> Directive[
+           RGBColor[
+            Rational[13, 15], 
+            Rational[1, 15], 0], 
+           EdgeForm[]], "Axiom 1" -> Directive[
+           RGBColor[
+            Rational[71, 255], 
+            Rational[182, 255], 
+            Rational[109, 255]], 
+           EdgeForm[]], "Axiom 2" -> Directive[
+           RGBColor[
+            Rational[71, 255], 
+            Rational[182, 255], 
+            Rational[109, 255]], 
+           EdgeForm[]]}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.6, 0.7, 0.5], Opacity[0.7], Arrowheads[Medium], 
+        {RGBColor[
+          Rational[167, 255], 
+          Rational[167, 255], 
+          Rational[167, 255]], Dashing[{Small, Small}], 
+         ArrowBox[{{0., 2.}, {1., 1.}}, 0.052236067977499794`]}, 
+        {RGBColor[
+          Rational[167, 255], 
+          Rational[167, 255], 
+          Rational[167, 255]], 
+         ArrowBox[{{1., 2.}, {1., 1.}}, 0.052236067977499794`]}, 
+        {RGBColor[
+          Rational[167, 255], 
+          Rational[167, 255], 
+          Rational[167, 255]], 
+         ArrowBox[{{0., 1.}, {0., 0.}}, 0.052236067977499794`]}, 
+        {RGBColor[
+          Rational[167, 255], 
+          Rational[167, 255], 
+          Rational[167, 255]], Dashing[{Small, Small}], 
+         ArrowBox[{{1., 1.}, {0., 0.}}, 0.052236067977499794`]}}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], {
+         TagBox[
+          TooltipBox[
+           {RGBColor[
+             Rational[71, 255], 
+             Rational[182, 255], 
+             Rational[109, 255]], EdgeForm[None], 
+            PolygonBox[{{-0.049163333514791345`, 1.983612239573759}, {0., 
+             1.9508366664852086`}, {0.049163333514791345`, 
+             1.983612239573759}, {0.049163333514791345`, 
+             2.0491633335147914`}, {-0.049163333514791345`, 
+             2.0491633335147914`}, {-0.049163333514791345`, 
+             1.983612239573759}}]},
+           TagBox[
+            GridBox[{{"\"Axiom 1\""}, {
+               RowBox[{"b", "\[Equal]", "a"}]}}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+             "Column", 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+            "Column"]],
+          Annotation[#, 
+           Column[{"Axiom 1", $CellContext`b == $CellContext`a}], 
+           "Tooltip"]& ], 
+         InsetBox["\<\"Axiom 1\"\>", 
+          Offset[{2, 2}, {0.052236067977499794, 2.0522360679775}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         TagBox[
+          TooltipBox[
+           {RGBColor[
+             Rational[71, 255], 
+             Rational[182, 255], 
+             Rational[109, 255]], EdgeForm[None], 
+            PolygonBox[{{0.9508366664852087, 1.983612239573759}, {1., 
+             1.9508366664852086`}, {1.0491633335147914`, 1.983612239573759}, {
+             1.0491633335147914`, 2.0491633335147914`}, {0.9508366664852087, 
+             2.0491633335147914`}, {0.9508366664852087, 1.983612239573759}}]},
+           TagBox[
+            GridBox[{{"\"Axiom 2\""}, {
+               RowBox[{"b", "\[Equal]", "c"}]}}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+             "Column", 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+            "Column"]],
+          Annotation[#, 
+           Column[{"Axiom 2", $CellContext`b == $CellContext`c}], 
+           "Tooltip"]& ], 
+         InsetBox["\<\"Axiom 2\"\>", 
+          Offset[{2, 2}, {1.0522360679774998, 2.0522360679775}], ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         TagBox[
+          TooltipBox[
+           {RGBColor[
+             Rational[146, 255], 
+             Rational[10, 17], 0], EdgeForm[None], 
+            PolygonBox[{{0., 0.9416183586249474}, {0.05838164137505265, 1.}, {
+             0., 1.0583816413750526`}, {-0.05838164137505265, 1.}, {0., 
+             0.9416183586249474}}]},
+           TagBox[
+            GridBox[{{"\"Hypothesis 1\""}, {
+               RowBox[{"a", "\[Equal]", "c"}]}}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+             "Column", 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+            "Column"]],
+          Annotation[#, 
+           Column[{"Hypothesis 1", $CellContext`a == $CellContext`c}], 
+           "Tooltip"]& ], 
+         InsetBox["\<\"Hypothesis 1\"\>", 
+          Offset[{2, 2}, {0.052236067977499794, 1.0522360679774998}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         TagBox[
+          TooltipBox[
+           {RGBColor[
+             Rational[15, 17], 
+             Rational[52, 85], 
+             Rational[12, 85]], EdgeForm[None], 
+            DiskBox[{1., 1.}, 0.052236067977499794]},
+           TagBox[
+            GridBox[{{"\"Substitution Lemma 1\""}, {
+               RowBox[{"a", "\[Equal]", "c"}]}}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+             "Column", 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+            "Column"]],
+          Annotation[#, 
+           Column[{"Substitution Lemma 1", $CellContext`a == $CellContext`c}],
+            "Tooltip"]& ], 
+         InsetBox["\<\"Substitution Lemma 1\"\>", 
+          Offset[{2, 2}, {1.0522360679774998, 1.0522360679774998}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         TagBox[
+          TooltipBox[
+           {RGBColor[
+             Rational[13, 15], 
+             Rational[1, 15], 0], EdgeForm[None], 
+            RectangleBox[{-0.04609065128815088, -0.04609065128815088}, \
+{0.04609065128815088, 0.04609065128815088}]},
+           TagBox[
+            
+            GridBox[{{"\"Conclusion 1\""}, {"True"}}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+             "Column", 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+            "Column"]],
+          Annotation[#, 
+           Column[{"Conclusion 1", True}], "Tooltip"]& ], 
+         InsetBox["\<\"Conclusion 1\"\>", 
+          Offset[{2, 2}, {0.052236067977499794, 0.052236067977499794}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->{
+   "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> Hue[0.8, 1., 0.6]},
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.867220258516095*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"86cb6b7b-87ab-4220-ad0e-cc24c2dc5367"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"proof", "[", "\"\<ProofDataset\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.867220266617608*^9, 3.8672202740415554`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"000ba22f-0235-4e05-b4b0-a6f277fbeceb"],
+
+Cell[BoxData[
+ TemplateBox[{TagBox[
+    DynamicModuleBox[{
+     TypeSystem`NestedGrid`PackagePrivate`$state$$ = 
+      Data`UnorderedAssociation[
+       "RowCount" -> 5, "Length" -> 5, "InitialType" -> TypeSystem`Assoc[
+          TypeSystem`Tuple[{
+            TypeSystem`Atom[String], 
+            TypeSystem`Atom[Integer]}], 
+          TypeSystem`Struct[{"Statement", "Proof"}, {TypeSystem`AnyType, 
+            TypeSystem`Assoc[
+             TypeSystem`Atom[String], TypeSystem`AnyType, 
+             TypeSystem`AnyLength]}], 5], "Shape" -> 
+        TypeSystem`PackageScope`HeaderShape[
+          Association[{All, 
+             TypeSystem`PackageScope`KeyDummy[0]} -> 2, {All, "Statement"} -> 
+           1, {All, "Proof"} -> 2], 
+          TypeSystem`PackageScope`Limited[
+           TypeSystem`PackageScope`ColumnShape[
+            TypeSystem`PackageScope`KeyValueShape[
+             TypeSystem`PackageScope`RowShape[{
+               TypeSystem`PackageScope`AtomShape[163.20000000000002`], 
+               TypeSystem`PackageScope`AtomShape[34]}], 
+             TypeSystem`PackageScope`RowShape[
+              Association[
+              "Statement" -> TypeSystem`PackageScope`UnknownShape, "Proof" -> 
+               TypeSystem`PackageScope`Limited[
+                 TypeSystem`PackageScope`ColumnShape[
+                  TypeSystem`PackageScope`KeyValueShape[
+                   TypeSystem`PackageScope`AtomShape[153.60000000000002`], 
+                   TypeSystem`PackageScope`UnknownShape]], 4, {
+                 All, "Proof"}]]]]], 5, {}]], "InitialData" -> 
+        TypeSystem`PackageScope`CacheHandle[1732369186], "Type" -> 
+        TypeSystem`Assoc[
+          TypeSystem`Tuple[{
+            TypeSystem`Atom[String], 
+            TypeSystem`Atom[Integer]}], 
+          TypeSystem`Struct[{"Statement", "Proof"}, {TypeSystem`AnyType, 
+            TypeSystem`Assoc[
+             TypeSystem`Atom[String], TypeSystem`AnyType, 
+             TypeSystem`AnyLength]}], 5], "HandleQ" -> True, "RowTarget" -> 
+        20, "Data" -> TypeSystem`PackageScope`CacheHandle[1732369186]], 
+      TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+      TypeSystem`NestedGrid`PackagePrivate`$pos$$ = 1, 
+      TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+      DynamicModule[{
+        TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+           Style[
+            Grid[{{
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Pane[
+                    Style[
+                    RawBoxes[
+                    StyleBox["\"\"", FontColor -> GrayLevel[0.4]]], Italic, 
+                    GrayLevel[0.7]], {{20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    Style[
+                    RawBoxes[
+                    StyleBox[
+                    "\"\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], Italic, 
+                    GrayLevel[0.7]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    All, Keys}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[All, Keys]], "Mouse"], Background -> 
+                GrayLevel[0.95], Alignment -> {Center, Baseline}], 
+               SpanFromLeft, 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Statement\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Statement\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    All, "Statement"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[All, "Statement"]], "Mouse"], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Pane[
+                    RawBoxes[
+                    StyleBox["\"Proof\"", FontColor -> GrayLevel[0.4]]], {{
+                    20, Full}, 15}], 
+                    Style[
+                    Pane[
+                    RawBoxes[
+                    StyleBox[
+                    "\"Proof\"", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], {{20, Full}, 15}], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    All, "Proof"}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[All, "Proof"]], "Mouse"], Background -> 
+                GrayLevel[0.95], Alignment -> {Center, Baseline}], 
+               SpanFromLeft}, {
+               Item[
+                Pane[
+                 Pane[
+                  Annotation["Axiom", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   454339854][
+                    GeneralUtilities`Slice[
+                    Key[{"Axiom", 1}], 1]], "Mouse"], 
+                  ImageSize -> {{163.20000000000002`, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Pane[
+                 Pane[
+                  Annotation[
+                   RawBoxes["1"], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   454339854][
+                    GeneralUtilities`Slice[
+                    Key[{"Axiom", 1}], 2]], "Mouse"], 
+                  ImageSize -> {{34, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"b", "\[Equal]", "a"}], FontFamily -> 
+                   "Source Code Pro", FontSize -> 13, ShowStringCharacters -> 
+                   True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Axiom", 1}], 
+                   Key["Statement"]]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Spacer[10], 
+                    Style[
+                    Spacer[10], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"Axiom", 1}], 
+                    Key["Proof"]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Axiom", 1}], 
+                   Key["Proof"]]], "Mouse"], BaseStyle -> {
+                  GrayLevel[0.5], 8}], SpanFromLeft}, {
+               Item[
+                Pane[
+                 Pane[
+                  Annotation["Axiom", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   454339854][
+                    GeneralUtilities`Slice[
+                    Key[{"Axiom", 2}], 1]], "Mouse"], 
+                  ImageSize -> {{163.20000000000002`, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Pane[
+                 Pane[
+                  Annotation[
+                   RawBoxes["2"], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   454339854][
+                    GeneralUtilities`Slice[
+                    Key[{"Axiom", 2}], 2]], "Mouse"], 
+                  ImageSize -> {{34, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"b", "\[Equal]", "c"}], FontFamily -> 
+                   "Source Code Pro", FontSize -> 13, ShowStringCharacters -> 
+                   True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Axiom", 2}], 
+                   Key["Statement"]]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Spacer[10], 
+                    Style[
+                    Spacer[10], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"Axiom", 2}], 
+                    Key["Proof"]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Axiom", 2}], 
+                   Key["Proof"]]], "Mouse"], BaseStyle -> {
+                  GrayLevel[0.5], 8}], SpanFromLeft}, {
+               Item[
+                Pane[
+                 Pane[
+                  Annotation["Hypothesis", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   454339854][
+                    GeneralUtilities`Slice[
+                    Key[{"Hypothesis", 1}], 1]], "Mouse"], 
+                  ImageSize -> {{163.20000000000002`, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Pane[
+                 Pane[
+                  Annotation[
+                   RawBoxes["1"], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   454339854][
+                    GeneralUtilities`Slice[
+                    Key[{"Hypothesis", 1}], 2]], "Mouse"], 
+                  ImageSize -> {{34, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"a", "\[Equal]", "c"}], FontFamily -> 
+                   "Source Code Pro", FontSize -> 13, ShowStringCharacters -> 
+                   True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Hypothesis", 1}], 
+                   Key["Statement"]]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Spacer[10], 
+                    Style[
+                    Spacer[10], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"Hypothesis", 1}], 
+                    Key["Proof"]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Hypothesis", 1}], 
+                   Key["Proof"]]], "Mouse"], BaseStyle -> {
+                  GrayLevel[0.5], 8}], SpanFromLeft}, {
+               Item[
+                Pane[
+                 Pane[
+                  Annotation["SubstitutionLemma", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   454339854][
+                    GeneralUtilities`Slice[
+                    Key[{"SubstitutionLemma", 1}], 1]], "Mouse"], 
+                  ImageSize -> {{163.20000000000002`, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Pane[
+                 Pane[
+                  Annotation[
+                   RawBoxes["1"], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   454339854][
+                    GeneralUtilities`Slice[
+                    Key[{"SubstitutionLemma", 1}], 2]], "Mouse"], 
+                  ImageSize -> {{34, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes[
+                  StyleBox[
+                   RowBox[{"a", "\[Equal]", "c"}], FontFamily -> 
+                   "Source Code Pro", FontSize -> 13, ShowStringCharacters -> 
+                   True]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"SubstitutionLemma", 1}], 
+                   Key["Statement"]]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover["Input", 
+                    Style[
+                    "Input", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"], 
+                    Key["Input"]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                   GeneralUtilities`Slice[
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"], 
+                    Key["Input"]]], "Mouse"], 
+                 ImageSize -> {{153.60000000000002`, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Style[{"Axiom", 2}, ShowStringCharacters -> False], 
+                    Style[
+                    Style[{"Axiom", 2}, ShowStringCharacters -> False], 
+                    FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"], 
+                    Key["Input"]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"SubstitutionLemma", 1}], 
+                   Key["Proof"], 
+                   Key["Input"]]], "Mouse"]]}, {
+              SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover["Position", 
+                    Style[
+                    "Position", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"], 
+                    Key["Position"]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                   GeneralUtilities`Slice[
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"], 
+                    Key["Position"]]], "Mouse"], 
+                 ImageSize -> {{153.60000000000002`, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"SubstitutionLemma", 1}], 
+                   Key["Proof"], 
+                   Key["Position"]]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+              SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover["Construct", 
+                    Style[
+                    "Construct", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"], 
+                    Key["Construct"]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                   GeneralUtilities`Slice[
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"], 
+                    Key["Construct"]]], "Mouse"], 
+                 ImageSize -> {{153.60000000000002`, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Style[{"Axiom", 1}, ShowStringCharacters -> False], 
+                    Style[
+                    Style[{"Axiom", 1}, ShowStringCharacters -> False], 
+                    FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"], 
+                    Key["Construct"]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"SubstitutionLemma", 1}], 
+                   Key["Proof"], 
+                   Key["Construct"]]], "Mouse"]]}, {
+              SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover["Orientation", 
+                    Style[
+                    "Orientation", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"], 
+                    Key["Orientation"]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                   GeneralUtilities`Slice[
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"], 
+                    Key["Orientation"]]], "Mouse"], 
+                 ImageSize -> {{153.60000000000002`, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"SubstitutionLemma", 1}], 
+                   Key["Proof"], 
+                   Key["Orientation"]]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+              SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Superscript["6 total \:203a ", ""], 
+                    Style[
+                    Superscript["6 total \:203a ", ""], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"SubstitutionLemma", 1}], 
+                    Key["Proof"]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"SubstitutionLemma", 1}], 
+                   Key["Proof"]]], "Mouse"], BaseStyle -> {{
+                   RGBColor[
+                   0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274], 8}, ContextMenu -> {
+                    MenuItem["Show 1 more row at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854}, 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    1]& , {All, "Proof"}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show 5 more rows at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854}, 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    5]& , {All, "Proof"}]], MenuEvaluator -> Automatic], 
+                    Delimiter, 
+                    MenuItem["Show 1 fewer row at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854}, 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
+, {All, "Proof"}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show 5 fewer rows at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854}, 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
+, {All, "Proof"}]], MenuEvaluator -> Automatic]}}, 
+                Alignment -> {Left, Baseline}, Background -> GrayLevel[0.98]],
+                SpanFromLeft}, {
+               Item[
+                Pane[
+                 Pane[
+                  Annotation["Conclusion", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   454339854][
+                    GeneralUtilities`Slice[
+                    Key[{"Conclusion", 1}], 1]], "Mouse"], 
+                  ImageSize -> {{163.20000000000002`, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Pane[
+                 Pane[
+                  Annotation[
+                   RawBoxes["1"], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                   454339854][
+                    GeneralUtilities`Slice[
+                    Key[{"Conclusion", 1}], 2]], "Mouse"], 
+                  ImageSize -> {{34, Full}, Automatic}, 
+                  Alignment -> {Left, Baseline}], 
+                 ImageSize -> {{60, Full}, Automatic}], Background -> 
+                GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["True"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Conclusion", 1}], 
+                   Key["Statement"]]], "Mouse"], 
+                ImageSize -> {{60, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}], 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover["Input", 
+                    Style[
+                    "Input", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"], 
+                    Key["Input"]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                   GeneralUtilities`Slice[
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"], 
+                    Key["Input"]]], "Mouse"], 
+                 ImageSize -> {{153.60000000000002`, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Style[{"Hypothesis", 1}, ShowStringCharacters -> False], 
+                    Style[
+                    Style[{"Hypothesis", 1}, ShowStringCharacters -> False], 
+                    FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"], 
+                    Key["Input"]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Conclusion", 1}], 
+                   Key["Proof"], 
+                   Key["Input"]]], "Mouse"]]}, {
+              SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover["Position", 
+                    Style[
+                    "Position", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"], 
+                    Key["Position"]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                   GeneralUtilities`Slice[
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"], 
+                    Key["Position"]]], "Mouse"], 
+                 ImageSize -> {{153.60000000000002`, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Conclusion", 1}], 
+                   Key["Proof"], 
+                   Key["Position"]]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+              SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover["Construct", 
+                    Style[
+                    "Construct", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"], 
+                    Key["Construct"]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                   GeneralUtilities`Slice[
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"], 
+                    Key["Construct"]]], "Mouse"], 
+                 ImageSize -> {{153.60000000000002`, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    
+                    Style[{"SubstitutionLemma", 1}, ShowStringCharacters -> 
+                    False], 
+                    Style[
+                    
+                    Style[{"SubstitutionLemma", 1}, ShowStringCharacters -> 
+                    False], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"], 
+                    Key["Construct"]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Conclusion", 1}], 
+                   Key["Proof"], 
+                   Key["Construct"]]], "Mouse"]]}, {
+              SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+               Item[
+                Pane[
+                 Annotation[
+                  EventHandler[
+                   MouseAppearance[
+                    Mouseover["Orientation", 
+                    Style[
+                    "Orientation", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                   TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"], 
+                    Key["Orientation"]}]], 
+                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                   GeneralUtilities`Slice[
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"], 
+                    Key["Orientation"]]], "Mouse"], 
+                 ImageSize -> {{153.60000000000002`, Full}, Automatic}], 
+                Background -> GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+               Pane[
+                Annotation[
+                 RawBoxes["1"], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Conclusion", 1}], 
+                   Key["Proof"], 
+                   Key["Orientation"]]], "Mouse"], 
+                ImageSize -> {{34, Full}, Automatic}, 
+                Alignment -> {Left, Baseline}]}, {
+              SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+               Item[
+                Annotation[
+                 EventHandler[
+                  MouseAppearance[
+                   Mouseover[
+                    Superscript["6 total \:203a ", ""], 
+                    Style[
+                    Superscript["6 total \:203a ", ""], FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][{
+                    Key[{"Conclusion", 1}], 
+                    Key["Proof"]}]], 
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+                  GeneralUtilities`Slice[
+                   Key[{"Conclusion", 1}], 
+                   Key["Proof"]]], "Mouse"], BaseStyle -> {{
+                   RGBColor[
+                   0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274], 8}, ContextMenu -> {
+                    MenuItem["Show 1 more row at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854}, 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    1]& , {All, "Proof"}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show 5 more rows at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854}, 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    5]& , {All, "Proof"}]], MenuEvaluator -> Automatic], 
+                    Delimiter, 
+                    MenuItem["Show 1 fewer row at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854}, 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
+, {All, "Proof"}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show 5 fewer rows at this level", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854}, 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
+, {All, "Proof"}]], MenuEvaluator -> Automatic]}}, 
+                Alignment -> {Left, Baseline}, Background -> GrayLevel[0.98]],
+                SpanFromLeft}}, BaseStyle -> {ContextMenu -> {
+                 MenuItem["Copy position to clipboard", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                   TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                  MenuEvaluator -> Automatic], 
+                 MenuItem["Copy data to clipboard", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                  MenuEvaluator -> Automatic], Delimiter, 
+                 MenuItem["Paste position in new cell", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                   TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                  MenuEvaluator -> Automatic], 
+                 MenuItem["Paste data in new cell", 
+                  KernelExecute[
+                   TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                   TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                  MenuEvaluator -> Automatic]}, FontFamily -> "Verdana", 
+               FontSize -> 12}, Alignment -> Left, RowMinHeight -> 1.5, 
+             Dividers -> All, FrameStyle -> GrayLevel[0.85], 
+             BaseStyle -> {FontFamily -> "Verdana", FontSize -> 12}], 
+            LineBreakWithin -> False, ContextMenu -> {}, NumberMarks -> False,
+             ShowAutoStyles -> False]], 
+         TypeSystem`NestedGrid`PackagePrivate`initialQ = True, 
+         TypeSystem`NestedGrid`PackagePrivate`self = $Failed}, 
+        Dynamic[
+         TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+         TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+            Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+            
+            Module[{TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+              TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+              TypeSystem`NestedGrid`PackagePrivate`LookupCacheValue[
+                TypeSystem`NestedGrid`PackagePrivate`$state$$["Data"]]}, 
+             TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = 
+              If[TypeSystem`NestedGrid`PackagePrivate`tmpData$ === 
+                TypeSystem`NestedGrid`PackagePrivate`$NotCached, 
+                TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+                TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+                TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+                 TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854][
+                TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+               Not[
+                FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+               TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+               TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+          TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+          TypeSystem`NestedGrid`PackagePrivate`$pos$$; If[
+            FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+            TypeSystem`SparseGrid[
+             TypeSystem`H["(data no longer present)"]], 
+            If[GeneralUtilities`$DebugMode, 
+             Row[{TypeSystem`NestedGrid`PackagePrivate`renderedGrid, "  ", 
+               TypeSystem`NestedGrid`PackagePrivate`formatState[
+               TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                TypeSystem`NestedGrid`PackagePrivate`$pos$$]}], 
+             TypeSystem`NestedGrid`PackagePrivate`renderedGrid]]], 
+         TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$pos$$}], 
+        DynamicModuleValues :> {}], 
+      TypeSystem`NestedGrid`PackagePrivate`$posCell$$, 
+      TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+        TypeSystem`NestedGrid`PackagePrivate`alignBar[
+        TypeSystem`NestedGrid`PackagePrivate`$state$$][
+         TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+          TypeSystem`PackageScope`Pathbar[
+          TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+           TypeSystem`NestedGrid`PackagePrivate`updateState[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$pos$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$grid$$, 454339854]]]], 
+        TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+      TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Framed[
+        Dynamic[
+         Replace[
+          MouseAnnotation[Null], {
+          TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][Null] -> 
+           "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[454339854][
+             Pattern[TypeSystem`NestedGrid`PackagePrivate`path, 
+              Blank[]]] :> (
+            TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+             TypeSystem`NestedGrid`PackagePrivate`path; 
+            TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+             TypeSystem`NestedGrid`PackagePrivate`path, 
+              TypeSystem`NestedGrid`PackagePrivate`makePathElements]), Null :> 
+           Spacer[10], Blank[] :> Spacer[10]}], TrackedSymbols :> {}], 
+        FrameStyle -> None, ImageMargins -> 0, FrameMargins -> 0, Alignment -> 
+        Top, ImageSize -> {Automatic, 14}]}, 
+     DynamicBox[
+      ToBoxes[
+       Column[
+        If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, {
+          TypeSystem`NestedGrid`PackagePrivate`displayScrollBar[
+          TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$pos$$], 
+          TypeSystem`NestedGrid`PackagePrivate`onDesktopShow[
+           TypeSystem`NestedGrid`PackagePrivate`alignBar[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$][
+           TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}, {
+         TypeSystem`NestedGrid`PackagePrivate`$topBar$$, 
+          TypeSystem`NestedGrid`PackagePrivate`displayScrollBar[
+          TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+           TypeSystem`NestedGrid`PackagePrivate`$pos$$], 
+          TypeSystem`NestedGrid`PackagePrivate`onDesktopShow[
+           TypeSystem`NestedGrid`PackagePrivate`alignBar[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$][
+           TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]]}], Spacings -> 
+        If[TypeSystem`NestedGrid`PackagePrivate`$path$$ == {}, 
+          0, {{}, {0, 0.05, 0}}]], StandardForm], 
+      ImageSizeCache -> {635., {180., 186.}}, 
+      TrackedSymbols :> {
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+     BaseStyle -> {LineBreakWithin -> False}, Deinitialization :> 
+     TypeSystem`NestedGrid`PackagePrivate`deleteState[
+      TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+     DynamicModuleValues :> {}, Initialization :> 
+     Block[{$ContextPath = $ContextPath}, 
+       Needs["TypeSystem`"]]], Deploy, DefaultBaseStyle -> "Deploy"]},
+  "CopyTag",
+  DisplayFunction->(#& ),
+  InterpretationFunction->("Dataset[<>]"& )]], "Output",
+ CellChangeTimes->{3.867220274806552*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"69e2ea5a-af54-494b-aa6c-ccf38030e491"]
+}, Open  ]]
+},
+WindowSize->{860, 681},
+WindowMargins->{{Automatic, -227}, {Automatic, 28}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 420, 10, 28, "Input",ExpressionUUID->"faadb4f9-ca44-4978-a1eb-a278321e25f6"],
+Cell[1003, 34, 19254, 401, 71, "Output",ExpressionUUID->"286220de-2c54-4b34-aa92-235f76a48001"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20294, 440, 223, 3, 28, "Input",ExpressionUUID->"52f703fe-1c7c-423a-9f0a-48e5883d0982"],
+Cell[20520, 445, 9107, 216, 449, "Output",ExpressionUUID->"86cb6b7b-87ab-4220-ad0e-cc24c2dc5367"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29664, 666, 223, 3, 28, "Input",ExpressionUUID->"000ba22f-0235-4e05-b4b0-a6f277fbeceb"],
+Cell[29890, 671, 52129, 1024, 418, "Output",ExpressionUUID->"69e2ea5a-af54-494b-aa6c-ccf38030e491"]
+}, Open  ]]
+}
+]
+*)
+
