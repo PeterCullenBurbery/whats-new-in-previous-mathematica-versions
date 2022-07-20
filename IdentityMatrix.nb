@@ -10,17 +10,68 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[       764,         33]
-NotebookOptionsPosition[       561,         21]
-NotebookOutlinePosition[       904,         36]
-CellTagsIndexPosition[       861,         33]
+NotebookDataLength[      2833,         95]
+NotebookOptionsPosition[      2072,         72]
+NotebookOutlinePosition[      2414,         87]
+CellTagsIndexPosition[      2371,         84]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
+Cell["IdentityMatrix", "Title",
+ CellChangeTimes->{{3.8673447196351366`*^9, 
+  3.867344721466133*^9}},ExpressionUUID->"9499cf6c-c53b-43d8-9ac8-\
+6bd3574602c2"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "Section",
+ CellChangeTimes->{{3.8673447243031015`*^9, 
+  3.867344726241085*^9}},ExpressionUUID->"86c419ec-3f5a-4ab2-aac5-\
+e06e885497ad"],
+
+Cell["Construct a 3x3 identity matrix:", "Text",
+ CellChangeTimes->{{3.8673447278060737`*^9, 
+  3.867344735142188*^9}},ExpressionUUID->"2ea09f8c-65bb-404e-98a1-\
+8f19ff3f296d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"IdentityMatrix", "[", "3", "]"}], "//", "MatrixForm"}]], "Input",
+ CellChangeTimes->{{3.8673447358551817`*^9, 3.8673447394411573`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"4593a01a-8917-47b5-b387-5d7631d55ae8"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "0", "0"},
+     {"0", "1", "0"},
+     {"0", "0", "1"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.86734473989615*^9},
+ CellLabel->
+  "Out[16]//MatrixForm=",ExpressionUUID->"70f82a8d-aaa2-436a-b6f9-\
+4907024d6252"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 },
 WindowSize->{860, 784},
-WindowMargins->{{Automatic, -386}, {Automatic, 4}},
+WindowMargins->{{Automatic, -50}, {Automatic, 0}},
 FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
@@ -35,9 +86,18 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 159, 3, 96, "Title",ExpressionUUID->"9499cf6c-c53b-43d8-9ac8-6bd3574602c2"],
+Cell[CellGroupData[{
+Cell[764, 29, 161, 3, 67, "Section",ExpressionUUID->"86c419ec-3f5a-4ab2-aac5-e06e885497ad"],
+Cell[928, 34, 176, 3, 34, "Text",ExpressionUUID->"2ea09f8c-65bb-404e-98a1-8f19ff3f296d"],
+Cell[CellGroupData[{
+Cell[1129, 41, 249, 4, 28, "Input",ExpressionUUID->"4593a01a-8917-47b5-b387-5d7631d55ae8"],
+Cell[1381, 47, 651, 20, 136, "Output",ExpressionUUID->"70f82a8d-aaa2-436a-b6f9-4907024d6252"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
