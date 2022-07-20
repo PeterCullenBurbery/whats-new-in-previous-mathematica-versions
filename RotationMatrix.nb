@@ -1,0 +1,273 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8640,        265]
+NotebookOptionsPosition[      6630,        222]
+NotebookOutlinePosition[      6973,        237]
+CellTagsIndexPosition[      6930,        234]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["RotationMatrix", "Title",
+ CellChangeTimes->{{3.867346047738736*^9, 
+  3.8673460494487257`*^9}},ExpressionUUID->"b0f02fcb-ca80-4e8e-81cd-\
+5d09f7a79844"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "Section",
+ CellChangeTimes->{{3.867346053079714*^9, 
+  3.867346056707963*^9}},ExpressionUUID->"5e9c6bac-266e-4964-a0c0-\
+090de5fbc9c1"],
+
+Cell["\<\
+Generate a 2D rotation matrix for rotating a vector about the origin:\
+\>", "Text",
+ CellChangeTimes->{{3.8673461298859773`*^9, 
+  3.867346143182891*^9}},ExpressionUUID->"3f701177-5528-4f6e-b38c-\
+df9e1db7cdb6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RotationMatrix", "[", "\[Theta]", "]"}], "//", 
+  "MatrixForm"}]], "Input",
+ CellChangeTimes->{{3.8673461440148897`*^9, 3.867346154329677*^9}},
+ CellLabel->"In[60]:=",ExpressionUUID->"1c13717a-983f-46f0-816c-0eab0fc7280c"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"Cos", "[", "\[Theta]", "]"}], 
+      RowBox[{"-", 
+       RowBox[{"Sin", "[", "\[Theta]", "]"}]}]},
+     {
+      RowBox[{"Sin", "[", "\[Theta]", "]"}], 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.8673461546376743`*^9},
+ CellLabel->
+  "Out[60]//MatrixForm=",ExpressionUUID->"57ed2921-740a-40c3-b109-\
+33f44a6ed5e4"]
+}, Open  ]],
+
+Cell["Apply rotation by \[Theta] to a unit vector in the x direction:", "Text",
+ CellChangeTimes->{{3.867346157024659*^9, 
+  3.867346167808585*^9}},ExpressionUUID->"ef7aeb2c-7ed1-403c-922a-\
+1a6f0eeb1560"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RotationMatrix", "[", "\[Theta]", "]"}], ".", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "0"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.867346168703582*^9, 3.8673461779727287`*^9}},
+ CellLabel->"In[61]:=",ExpressionUUID->"e5f16bfc-9440-4ee3-a547-7a862477ec70"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Cos", "[", "\[Theta]", "]"}], ",", 
+   RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8673461784897256`*^9},
+ CellLabel->"Out[61]=",ExpressionUUID->"cbe921ad-072a-4a6d-b9b2-6c41ca91f246"]
+}, Open  ]],
+
+Cell["Counterclockwise rotation by 30\[Degree]:", "Text",
+ CellChangeTimes->{{3.8673461809727116`*^9, 
+  3.867346191765216*^9}},ExpressionUUID->"99250df4-345a-4549-a872-\
+b18523f501d2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RotationMatrix", "[", 
+  RowBox[{"30", "Degree"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8673461940661893`*^9, 3.8673462060464125`*^9}},
+ CellLabel->"In[63]:=",ExpressionUUID->"08208e50-e2e5-4be5-a308-a5ca46a51850"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox[
+      SqrtBox["3"], "2"], ",", 
+     RowBox[{"-", 
+      FractionBox["1", "2"]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "2"], ",", 
+     FractionBox[
+      SqrtBox["3"], "2"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8673461977431636`*^9, 3.8673462063744097`*^9}},
+ CellLabel->"Out[63]=",ExpressionUUID->"e9bc68e5-b124-403b-bdc1-d49fd393216c"]
+}, Open  ]],
+
+Cell["\<\
+Rotation that transforms the direction of {1,1} into the direction of {0,-1}:\
+\>", "Text",
+ CellChangeTimes->{{3.8673462178268976`*^9, 
+  3.8673462462934628`*^9}},ExpressionUUID->"3772111c-1b18-418c-ad1b-\
+3f58e5dced21"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RotationMatrix", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", 
+      RowBox[{"-", "1"}]}], "}"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.867346248544448*^9, 3.867346268201517*^9}},
+ CellLabel->"In[64]:=",ExpressionUUID->"728dfc16-3e3c-4dbb-8b66-3875a6c4e3a3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox["1", 
+       SqrtBox["2"]]}], ",", 
+     FractionBox["1", 
+      SqrtBox["2"]]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox["1", 
+       SqrtBox["2"]]}], ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SqrtBox["2"]]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.867346268523514*^9},
+ CellLabel->"Out[64]=",ExpressionUUID->"5c441fd3-d447-4367-864c-95d8ac933940"]
+}, Open  ]],
+
+Cell["3D rotation around the z-axis:", "Text",
+ CellChangeTimes->{{3.8673462710364943`*^9, 
+  3.867346278297019*^9}},ExpressionUUID->"4fd232f1-f85b-4d41-9a82-\
+b3071678ae4a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RotationMatrix", "[", 
+   RowBox[{"\[Theta]", ",", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}], "//", 
+  "MatrixForm"}]], "Input",
+ CellChangeTimes->{{3.867346248544448*^9, 3.867346295120072*^9}},
+ CellLabel->"In[66]:=",ExpressionUUID->"b567912b-eadc-4504-bed4-5ceb596cff18"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"Cos", "[", "\[Theta]", "]"}], 
+      RowBox[{"-", 
+       RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "0"},
+     {
+      RowBox[{"Sin", "[", "\[Theta]", "]"}], 
+      RowBox[{"Cos", "[", "\[Theta]", "]"}], "0"},
+     {"0", "0", "1"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.867346289980932*^9, 3.8673462953980694`*^9}},
+ CellLabel->
+  "Out[66]//MatrixForm=",ExpressionUUID->"1d330db4-da1d-4567-ac16-\
+5b4ff276bf68"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{860, 785},
+WindowMargins->{{Automatic, -166}, {Automatic, 8}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 159, 3, 96, "Title",ExpressionUUID->"b0f02fcb-ca80-4e8e-81cd-5d09f7a79844"],
+Cell[CellGroupData[{
+Cell[764, 29, 159, 3, 67, "Section",ExpressionUUID->"5e9c6bac-266e-4964-a0c0-090de5fbc9c1"],
+Cell[926, 34, 221, 5, 34, "Text",ExpressionUUID->"3f701177-5528-4f6e-b38c-df9e1db7cdb6"],
+Cell[CellGroupData[{
+Cell[1172, 43, 257, 5, 28, "Input",ExpressionUUID->"1c13717a-983f-46f0-816c-0eab0fc7280c"],
+Cell[1432, 50, 809, 24, 62, "Output",ExpressionUUID->"57ed2921-740a-40c3-b109-33f44a6ed5e4"]
+}, Open  ]],
+Cell[2256, 77, 205, 3, 34, "Text",ExpressionUUID->"ef7aeb2c-7ed1-403c-922a-1a6f0eeb1560"],
+Cell[CellGroupData[{
+Cell[2486, 84, 291, 6, 28, "Input",ExpressionUUID->"e5f16bfc-9440-4ee3-a547-7a862477ec70"],
+Cell[2780, 92, 272, 6, 32, "Output",ExpressionUUID->"cbe921ad-072a-4a6d-b9b2-6c41ca91f246"]
+}, Open  ]],
+Cell[3067, 101, 185, 3, 34, "Text",ExpressionUUID->"99250df4-345a-4549-a872-b18523f501d2"],
+Cell[CellGroupData[{
+Cell[3277, 108, 240, 4, 28, "Input",ExpressionUUID->"08208e50-e2e5-4be5-a308-a5ca46a51850"],
+Cell[3520, 114, 470, 15, 54, "Output",ExpressionUUID->"e9bc68e5-b124-403b-bdc1-d49fd393216c"]
+}, Open  ]],
+Cell[4005, 132, 231, 5, 34, "Text",ExpressionUUID->"3772111c-1b18-418c-ad1b-3f58e5dced21"],
+Cell[CellGroupData[{
+Cell[4261, 141, 383, 10, 28, "Input",ExpressionUUID->"728dfc16-3e3c-4dbb-8b66-3875a6c4e3a3"],
+Cell[4647, 153, 521, 19, 55, "Output",ExpressionUUID->"5c441fd3-d447-4367-864c-95d8ac933940"]
+}, Open  ]],
+Cell[5183, 175, 174, 3, 34, "Text",ExpressionUUID->"4fd232f1-f85b-4d41-9a82-b3071678ae4a"],
+Cell[CellGroupData[{
+Cell[5382, 182, 340, 8, 28, "Input",ExpressionUUID->"b567912b-eadc-4504-bed4-5ceb596cff18"],
+Cell[5725, 192, 865, 25, 79, "Output",ExpressionUUID->"1d330db4-da1d-4567-ac16-5b4ff276bf68"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
