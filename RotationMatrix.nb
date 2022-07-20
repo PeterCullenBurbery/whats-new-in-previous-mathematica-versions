@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     32342,        962]
-NotebookOptionsPosition[     26187,        852]
-NotebookOutlinePosition[     26529,        867]
-CellTagsIndexPosition[     26486,        864]
+NotebookDataLength[     36700,       1066]
+NotebookOptionsPosition[     30097,        948]
+NotebookOutlinePosition[     30439,        963]
+CellTagsIndexPosition[     30396,        960]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -847,6 +847,102 @@ Cell[BoxData[
  CellChangeTimes->{3.86734723489077*^9},
  CellLabel->"Out[86]=",ExpressionUUID->"8cbf385b-0b53-4aa9-83fd-b6f3bec97b5d"]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Neat Examples", "Section",
+ CellChangeTimes->{{3.8673472595870266`*^9, 
+  3.867347261370987*^9}},ExpressionUUID->"c184ed28-03f4-415d-8322-\
+04b8de29afe6"],
+
+Cell["Rotations of a circular sector:", "Text",
+ CellChangeTimes->{{3.867347262737979*^9, 
+  3.867347267643614*^9}},ExpressionUUID->"09ee39c1-9e32-4914-a4b1-\
+11b5b98643f9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"GeometricTransformation", "[", 
+      RowBox[{
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}], ",", "1", ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "7"}], 
+            RowBox[{"\[Pi]", "/", "10"}]}], ",", 
+           RowBox[{"7", 
+            RowBox[{"\[Pi]", "/", "10"}]}]}], "}"}]}], "]"}], ",", 
+       RowBox[{"RotationMatrix", "[", "a", "]"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"a", ",", 
+       RowBox[{"2", 
+        RowBox[{"\[Pi]", "/", "5"}], " ", 
+        RowBox[{"Range", "[", "5", "]"}]}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "3.1"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.867347269557607*^9, 3.8673473627392006`*^9}},
+ CellLabel->"In[88]:=",ExpressionUUID->"21d60a80-2175-49d7-8f90-4cd674b01819"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   GeometricTransformationBox[
+    DiskBox[{1, 0}, 1, 
+     NCache[{Rational[-7, 10] Pi, Rational[7, 10] Pi}, {-2.199114857512855, 
+      2.199114857512855}]], 
+    NCache[{{Rational[1, 4] (-1 + 5^Rational[1, 2]), 
+       Rational[-1, 2] (Rational[1, 2] (5 + 5^Rational[1, 2]))^
+        Rational[1, 2]}, {
+      Rational[1, 2] (Rational[1, 2] (5 + 5^Rational[1, 2]))^Rational[1, 2], 
+       Rational[1, 4] (-1 + 5^Rational[1, 2])}}, {{
+     0.30901699437494745`, -0.9510565162951535}, {0.9510565162951535, 
+     0.30901699437494745`}}]], 
+   GeometricTransformationBox[
+    DiskBox[{1, 0}, 1, 
+     NCache[{Rational[-7, 10] Pi, Rational[7, 10] Pi}, {-2.199114857512855, 
+      2.199114857512855}]], 
+    NCache[{{Rational[1, 4] (-1 - 5^Rational[1, 2]), 
+       Rational[-1, 2] (Rational[1, 2] (5 - 5^Rational[1, 2]))^
+        Rational[1, 2]}, {
+      Rational[1, 2] (Rational[1, 2] (5 - 5^Rational[1, 2]))^Rational[1, 2], 
+       Rational[1, 4] (-1 - 5^
+        Rational[1, 2])}}, {{-0.8090169943749475, -0.5877852522924731}, {
+     0.5877852522924731, -0.8090169943749475}}]], 
+   GeometricTransformationBox[
+    DiskBox[{1, 0}, 1, 
+     NCache[{Rational[-7, 10] Pi, Rational[7, 10] Pi}, {-2.199114857512855, 
+      2.199114857512855}]], 
+    NCache[{{Rational[1, 4] (-1 - 5^Rational[1, 2]), 
+       Rational[1, 2] (Rational[1, 2] (5 - 5^Rational[1, 2]))^
+        Rational[1, 2]}, {
+      Rational[-1, 2] (Rational[1, 2] (5 - 5^Rational[1, 2]))^Rational[1, 2], 
+       Rational[1, 4] (-1 - 5^Rational[1, 2])}}, {{-0.8090169943749475, 
+     0.5877852522924731}, {-0.5877852522924731, -0.8090169943749475}}]], 
+   GeometricTransformationBox[
+    DiskBox[{1, 0}, 1, 
+     NCache[{Rational[-7, 10] Pi, Rational[7, 10] Pi}, {-2.199114857512855, 
+      2.199114857512855}]], 
+    NCache[{{Rational[1, 4] (-1 + 5^Rational[1, 2]), 
+       Rational[1, 2] (Rational[1, 2] (5 + 5^Rational[1, 2]))^
+        Rational[1, 2]}, {
+      Rational[-1, 2] (Rational[1, 2] (5 + 5^Rational[1, 2]))^Rational[1, 2], 
+       Rational[1, 4] (-1 + 5^Rational[1, 2])}}, {{0.30901699437494745`, 
+     0.9510565162951535}, {-0.9510565162951535, 0.30901699437494745`}}]], 
+   GeometricTransformationBox[
+    DiskBox[{1, 0}, 1, 
+     NCache[{Rational[-7, 10] Pi, Rational[7, 10] Pi}, {-2.199114857512855, 
+      2.199114857512855}]], {{1, 0}, {0, 1}}]},
+  PlotRange->3.1]], "Output",
+ CellChangeTimes->{{3.8673473391886754`*^9, 3.8673473632301965`*^9}},
+ CellLabel->"Out[88]=",ExpressionUUID->"a3fa5965-9ade-42f6-8bbf-8154e06b090d"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -961,6 +1057,14 @@ Cell[24102, 784, 373, 14, 34, "Text",ExpressionUUID->"22df4452-47e6-4355-ae7e-a6
 Cell[CellGroupData[{
 Cell[24500, 802, 246, 5, 28, "Input",ExpressionUUID->"c81af153-e531-44f6-973d-19ee8171b899"],
 Cell[24749, 809, 1398, 38, 52, "Output",ExpressionUUID->"8cbf385b-0b53-4aa9-83fd-b6f3bec97b5d"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26196, 853, 160, 3, 67, "Section",ExpressionUUID->"c184ed28-03f4-415d-8322-04b8de29afe6"],
+Cell[26359, 858, 173, 3, 34, "Text",ExpressionUUID->"09ee39c1-9e32-4914-a4b1-11b5b98643f9"],
+Cell[CellGroupData[{
+Cell[26557, 865, 967, 26, 48, "Input",ExpressionUUID->"21d60a80-2175-49d7-8f90-4cd674b01819"],
+Cell[27527, 893, 2530, 50, 377, "Output",ExpressionUUID->"a3fa5965-9ade-42f6-8bbf-8154e06b090d"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
