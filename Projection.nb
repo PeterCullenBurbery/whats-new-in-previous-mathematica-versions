@@ -10,18 +10,87 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1008,         38]
-NotebookOptionsPosition[       717,         25]
-NotebookOutlinePosition[      1058,         40]
-CellTagsIndexPosition[      1015,         37]
+NotebookDataLength[      3889,        123]
+NotebookOptionsPosition[      2728,         94]
+NotebookOutlinePosition[      3069,        109]
+CellTagsIndexPosition[      3026,        106]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell["Projection", "Title",
+
+Cell[CellGroupData[{
+Cell["Projection ", "Title",
  CellChangeTimes->{{3.867343096531186*^9, 
-  3.8673430976411676`*^9}},ExpressionUUID->"ce1f7e3d-2b88-4a92-93ae-\
-2d4a23125cc7"]
+  3.867343101730136*^9}},ExpressionUUID->"ce1f7e3d-2b88-4a92-93ae-\
+2d4a23125cc7"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "Section",
+ CellChangeTimes->{{3.8673431049841113`*^9, 
+  3.867343107428094*^9}},ExpressionUUID->"b4655839-ba79-4295-92b9-\
+4de6f7b07d40"],
+
+Cell[TextData[{
+ "Project the vector {5,6,7} onto the ",
+ StyleBox["x",
+  FontSlant->"Italic"],
+ " axis:"
+}], "Text",
+ CellChangeTimes->{{3.867343125966767*^9, 
+  3.8673431358226757`*^9}},ExpressionUUID->"83eaca9f-9b13-4622-b6e1-\
+bbc07104c326"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Projection", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"5", ",", "6", ",", "7"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.86734313681767*^9, 3.867343144003614*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"063e838d-dbe5-4002-b716-8087b1d431d2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"5", ",", "0", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{3.8673431442668962`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"f486b2cb-0ed2-4007-8665-dcc278d27985"]
+}, Open  ]],
+
+Cell["Project onto another vector:", "Text",
+ CellChangeTimes->{{3.8673431459268875`*^9, 
+  3.8673431502398524`*^9}},ExpressionUUID->"8fcc5249-e377-4691-a6ca-\
+03e0d9cfc997"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Projection", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"5", ",", "6", ",", "7"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.867343150944845*^9, 3.8673431559753957`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"d4dd5013-5e04-4624-a9cd-c74f16136ad1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"6", ",", "6", ",", "6"}], "}"}]], "Output",
+ CellChangeTimes->{3.867343156875389*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"9c4be6ee-7c1b-4ed8-854d-488711fba499"]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Properties & Relations", "Section",
+ CellChangeTimes->{{3.867343167994314*^9, 
+  3.867343178696389*^9}},ExpressionUUID->"9fc49d86-2128-42c9-a76f-\
+73826701d252"]
+}, Open  ]]
 },
 WindowSize->{860, 784},
 WindowMargins->{{Automatic, 13}, {Automatic, 6}},
@@ -39,10 +108,24 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 155, 3, 96, "Title",ExpressionUUID->"ce1f7e3d-2b88-4a92-93ae-2d4a23125cc7"]
+Cell[CellGroupData[{
+Cell[580, 22, 154, 3, 96, "Title",ExpressionUUID->"ce1f7e3d-2b88-4a92-93ae-2d4a23125cc7"],
+Cell[CellGroupData[{
+Cell[759, 29, 161, 3, 67, "Section",ExpressionUUID->"b4655839-ba79-4295-92b9-4de6f7b07d40"],
+Cell[923, 34, 245, 8, 34, "Text",ExpressionUUID->"83eaca9f-9b13-4622-b6e1-bbc07104c326"],
+Cell[CellGroupData[{
+Cell[1193, 46, 347, 8, 28, "Input",ExpressionUUID->"063e838d-dbe5-4002-b716-8087b1d431d2"],
+Cell[1543, 56, 205, 4, 32, "Output",ExpressionUUID->"f486b2cb-0ed2-4007-8665-dcc278d27985"]
+}, Open  ]],
+Cell[1763, 63, 174, 3, 34, "Text",ExpressionUUID->"8fcc5249-e377-4691-a6ca-03e0d9cfc997"],
+Cell[CellGroupData[{
+Cell[1962, 70, 350, 8, 28, "Input",ExpressionUUID->"d4dd5013-5e04-4624-a9cd-c74f16136ad1"],
+Cell[2315, 80, 203, 4, 32, "Output",ExpressionUUID->"9c4be6ee-7c1b-4ed8-854d-488711fba499"]
+}, Open  ]]
+}, Open  ]],
+Cell[2545, 88, 167, 3, 67, "Section",ExpressionUUID->"9fc49d86-2128-42c9-a76f-73826701d252"]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
