@@ -10,18 +10,173 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1007,         38]
-NotebookOptionsPosition[       715,         25]
-NotebookOutlinePosition[      1057,         40]
-CellTagsIndexPosition[      1014,         37]
+NotebookDataLength[      6889,        217]
+NotebookOptionsPosition[      5281,        180]
+NotebookOutlinePosition[      5623,        195]
+CellTagsIndexPosition[      5580,        192]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell["Diagonal", "Title",
  CellChangeTimes->{{3.8673564237405343`*^9, 
   3.867356424494528*^9}},ExpressionUUID->"b4c7cb23-1655-457d-9aa1-\
-2034ea645dbb"]
+2034ea645dbb"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "Section",
+ CellChangeTimes->{{3.8673564519783025`*^9, 
+  3.8673564527032948`*^9}},ExpressionUUID->"dfa16def-2d97-4e15-aefb-\
+f7dc406ba69b"],
+
+Cell["Give the diagonal elements of a matrix:", "Text",
+ CellChangeTimes->{{3.867356455112279*^9, 
+  3.8673564611482325`*^9}},ExpressionUUID->"004e8946-5deb-4fd0-92b4-\
+0ebf738685a6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Diagonal", "[", 
+  RowBox[{"Array", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Indexed", "[", 
+      RowBox[{"x", ",", 
+       RowBox[{"{", "##", "}"}]}], "]"}], "&"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"5", ",", "5"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.867356461913229*^9, 3.8673564761659765`*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"c8729dc3-fd82-49f8-8061-3fd9753f468f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"x","1","1"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","2","2"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","3","3"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","4","4"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","5","5"},
+    "IndexedDefault"]}], "}"}]], "Output",
+ CellChangeTimes->{3.867356476571971*^9},
+ CellLabel->"Out[37]=",ExpressionUUID->"9a96ea9e-7ca6-42dd-b43a-9202f9e7cf90"]
+}, Open  ]],
+
+Cell["\<\
+Give diagonals one element above and below the leading diagonal:\
+\>", "Text",
+ CellChangeTimes->{{3.867356513324518*^9, 
+  3.8673565328485594`*^9}},ExpressionUUID->"bd3bfcca-a2f7-4cb1-a7ae-\
+3fc54e81aeca"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Diagonal", "[", 
+  RowBox[{
+   RowBox[{"Array", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Indexed", "[", 
+       RowBox[{"x", ",", 
+        RowBox[{"{", "##", "}"}]}], "]"}], "&"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "5"}], "}"}]}], "]"}], ",", "1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8673565337815523`*^9, 3.86735654427106*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"4929cb60-1e86-433c-bae6-5181d1663165"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"x","1","2"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","2","3"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","3","4"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","4","5"},
+    "IndexedDefault"]}], "}"}]], "Output",
+ CellChangeTimes->{3.8673565445910587`*^9},
+ CellLabel->"Out[38]=",ExpressionUUID->"bff9264d-ba37-46f2-a105-42940679e216"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Diagonal", "[", 
+  RowBox[{
+   RowBox[{"Array", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Indexed", "[", 
+       RowBox[{"x", ",", 
+        RowBox[{"{", "##", "}"}]}], "]"}], "&"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "5"}], "}"}]}], "]"}], ",", 
+   RowBox[{"-", "1"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8673565493430233`*^9, 3.867356554363985*^9}},
+ CellLabel->"In[39]:=",ExpressionUUID->"1cfe6ccb-7802-46a9-9114-092474993edf"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"x","2","1"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","3","2"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","4","3"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","5","4"},
+    "IndexedDefault"]}], "}"}]], "Output",
+ CellChangeTimes->{3.8673565547531047`*^9},
+ CellLabel->"Out[39]=",ExpressionUUID->"61558cdd-ce49-48b7-9d4a-795a5b09b383"]
+}, Open  ]],
+
+Cell["Give a diagonal of a nonsquare matrix:", "Text",
+ CellChangeTimes->{{3.867356557368084*^9, 
+  3.867356567948579*^9}},ExpressionUUID->"75ad0098-bdb2-4ccf-bfa6-\
+6a4cc43a9d42"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Diagonal", "[", 
+  RowBox[{"Array", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Indexed", "[", 
+      RowBox[{"x", ",", 
+       RowBox[{"{", "##", "}"}]}], "]"}], "&"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"5", ",", "7"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8673565493430233`*^9, 3.8673565779375105`*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"aeb8e918-6474-4803-b9a2-f23adc078344"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"x","1","1"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","2","2"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","3","3"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","4","4"},
+    "IndexedDefault"], ",", 
+   TemplateBox[{"x","5","5"},
+    "IndexedDefault"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8673565732775383`*^9, 3.8673565784005003`*^9}},
+ CellLabel->"Out[41]=",ExpressionUUID->"cb5d1274-0c96-4785-8343-672e869c74a7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 },
 WindowSize->{860, 771},
 WindowMargins->{{Automatic, 16}, {Automatic, 13}},
@@ -39,10 +194,32 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 153, 3, 96, "Title",ExpressionUUID->"b4c7cb23-1655-457d-9aa1-2034ea645dbb"]
+Cell[CellGroupData[{
+Cell[580, 22, 153, 3, 96, "Title",ExpressionUUID->"b4c7cb23-1655-457d-9aa1-2034ea645dbb"],
+Cell[CellGroupData[{
+Cell[758, 29, 163, 3, 67, "Section",ExpressionUUID->"dfa16def-2d97-4e15-aefb-f7dc406ba69b"],
+Cell[924, 34, 183, 3, 34, "Text",ExpressionUUID->"004e8946-5deb-4fd0-92b4-0ebf738685a6"],
+Cell[CellGroupData[{
+Cell[1132, 41, 428, 11, 28, "Input",ExpressionUUID->"c8729dc3-fd82-49f8-8061-3fd9753f468f"],
+Cell[1563, 54, 469, 14, 32, "Output",ExpressionUUID->"9a96ea9e-7ca6-42dd-b43a-9202f9e7cf90"]
+}, Open  ]],
+Cell[2047, 71, 216, 5, 34, "Text",ExpressionUUID->"bd3bfcca-a2f7-4cb1-a7ae-3fc54e81aeca"],
+Cell[CellGroupData[{
+Cell[2288, 80, 458, 12, 28, "Input",ExpressionUUID->"4929cb60-1e86-433c-bae6-5181d1663165"],
+Cell[2749, 94, 412, 12, 32, "Output",ExpressionUUID->"bff9264d-ba37-46f2-a105-42940679e216"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3198, 111, 478, 13, 28, "Input",ExpressionUUID->"1cfe6ccb-7802-46a9-9114-092474993edf"],
+Cell[3679, 126, 412, 12, 32, "Output",ExpressionUUID->"61558cdd-ce49-48b7-9d4a-795a5b09b383"]
+}, Open  ]],
+Cell[4106, 141, 180, 3, 34, "Text",ExpressionUUID->"75ad0098-bdb2-4ccf-bfa6-6a4cc43a9d42"],
+Cell[CellGroupData[{
+Cell[4311, 148, 430, 11, 28, "Input",ExpressionUUID->"aeb8e918-6474-4803-b9a2-f23adc078344"],
+Cell[4744, 161, 497, 14, 32, "Output",ExpressionUUID->"cb5d1274-0c96-4785-8343-672e869c74a7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
