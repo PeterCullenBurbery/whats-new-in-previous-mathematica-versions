@@ -10,15 +10,130 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[       926,         35]
-NotebookOptionsPosition[       634,         22]
-NotebookOutlinePosition[       977,         37]
-CellTagsIndexPosition[       934,         34]
+NotebookDataLength[      5121,        166]
+NotebookOptionsPosition[      3954,        137]
+NotebookOutlinePosition[      4297,        152]
+CellTagsIndexPosition[      4254,        149]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell["", "Title",ExpressionUUID->"d0a6c857-0c0a-48f7-8c8d-a52b2ab1d86c"]
+
+Cell[CellGroupData[{
+Cell["Hilbert Matrix", "Title",
+ CellChangeTimes->{{3.8673522088572507`*^9, 
+  3.8673522111042333`*^9}},ExpressionUUID->"d0a6c857-0c0a-48f7-8c8d-\
+a52b2ab1d86c"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "Section",
+ CellChangeTimes->{{3.8673522147277803`*^9, 
+  3.86735222067474*^9}},ExpressionUUID->"ede7a4c6-f47e-4d0f-8061-\
+f53c2ef332e5"],
+
+Cell["3x3 Hilbert matrix:", "Text",
+ CellChangeTimes->{{3.8673522256977096`*^9, 
+  3.867352230041683*^9}},ExpressionUUID->"1ce68d3f-c295-4d0a-9da5-\
+1bba35be3c4d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"HilbertMatrix", "[", "3", "]"}], "//", "MatrixForm"}]], "Input",
+ CellChangeTimes->{{3.8673522308716793`*^9, 3.867352242394784*^9}},
+ CellLabel->"In[89]:=",ExpressionUUID->"821389fc-ebe6-428e-9253-5a42851bb248"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", 
+      FractionBox["1", "2"], 
+      FractionBox["1", "3"]},
+     {
+      FractionBox["1", "2"], 
+      FractionBox["1", "3"], 
+      FractionBox["1", "4"]},
+     {
+      FractionBox["1", "3"], 
+      FractionBox["1", "4"], 
+      FractionBox["1", "5"]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.867352242670783*^9},
+ CellLabel->
+  "Out[89]//MatrixForm=",ExpressionUUID->"67d29698-950d-4ce8-b249-\
+afa32b56b46d"]
+}, Open  ]],
+
+Cell["3x5 Hilbert matrix:", "Text",
+ CellChangeTimes->{{3.8673522441707735`*^9, 
+  3.867352252626292*^9}},ExpressionUUID->"675a12aa-ff50-4210-921e-\
+ea865ac1a388"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"HilbertMatrix", "[", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "5"}], "}"}], "]"}], "//", "MatrixForm"}]], "Input",
+ CellChangeTimes->{{3.8673522534982853`*^9, 3.8673522621652336`*^9}},
+ CellLabel->"In[90]:=",ExpressionUUID->"cf1d16e8-eacd-46fc-a916-0bdc44ccbfd6"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", 
+      FractionBox["1", "2"], 
+      FractionBox["1", "3"], 
+      FractionBox["1", "4"], 
+      FractionBox["1", "5"]},
+     {
+      FractionBox["1", "2"], 
+      FractionBox["1", "3"], 
+      FractionBox["1", "4"], 
+      FractionBox["1", "5"], 
+      FractionBox["1", "6"]},
+     {
+      FractionBox["1", "3"], 
+      FractionBox["1", "4"], 
+      FractionBox["1", "5"], 
+      FractionBox["1", "6"], 
+      FractionBox["1", "7"]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.8673522624612284`*^9},
+ CellLabel->
+  "Out[90]//MatrixForm=",ExpressionUUID->"ca8a3db8-f4b3-4f80-bef1-\
+dd40b21e32b9"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8673522342506647`*^9, 
+  3.8673522368698187`*^9}},ExpressionUUID->"ee187c92-c6c1-45a4-9e84-\
+f63fa8aa3017"]
+}, Open  ]]
+}, Open  ]]
 },
 WindowSize->{860, 771},
 WindowMargins->{{Automatic, -90}, {Automatic, 19}},
@@ -36,10 +151,24 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 72, 0, 96, "Title",ExpressionUUID->"d0a6c857-0c0a-48f7-8c8d-a52b2ab1d86c"]
+Cell[CellGroupData[{
+Cell[580, 22, 161, 3, 96, "Title",ExpressionUUID->"d0a6c857-0c0a-48f7-8c8d-a52b2ab1d86c"],
+Cell[CellGroupData[{
+Cell[766, 29, 160, 3, 67, "Section",ExpressionUUID->"ede7a4c6-f47e-4d0f-8061-f53c2ef332e5"],
+Cell[929, 34, 163, 3, 34, "Text",ExpressionUUID->"1ce68d3f-c295-4d0a-9da5-1bba35be3c4d"],
+Cell[CellGroupData[{
+Cell[1117, 41, 246, 4, 28, "Input",ExpressionUUID->"821389fc-ebe6-428e-9253-5a42851bb248"],
+Cell[1366, 47, 852, 28, 106, "Output",ExpressionUUID->"67d29698-950d-4ce8-b249-afa32b56b46d"]
+}, Open  ]],
+Cell[2233, 78, 163, 3, 34, "Text",ExpressionUUID->"675a12aa-ff50-4210-921e-ea865ac1a388"],
+Cell[CellGroupData[{
+Cell[2421, 85, 297, 6, 28, "Input",ExpressionUUID->"cf1d16e8-eacd-46fc-a916-0bdc44ccbfd6"],
+Cell[2721, 93, 1034, 34, 106, "Output",ExpressionUUID->"ca8a3db8-f4b3-4f80-bef1-dd40b21e32b9"]
+}, Open  ]],
+Cell[3770, 130, 156, 3, 28, "Input",ExpressionUUID->"ee187c92-c6c1-45a4-9e84-f63fa8aa3017"]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
