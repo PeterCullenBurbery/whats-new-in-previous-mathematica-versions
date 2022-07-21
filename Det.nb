@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     27238,        768]
-NotebookOptionsPosition[     24979,        721]
-NotebookOutlinePosition[     25321,        736]
-CellTagsIndexPosition[     25278,        733]
+NotebookDataLength[     30001,        848]
+NotebookOptionsPosition[     26853,        785]
+NotebookOutlinePosition[     27195,        800]
+CellTagsIndexPosition[     27152,        797]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -703,10 +703,74 @@ Cell[BoxData["0"], "Output",
 }, Open  ]]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell["Options", "Section",
  CellChangeTimes->{{3.867422953582636*^9, 
   3.8674229541826315`*^9}},ExpressionUUID->"ff2ca552-7f25-4b85-9796-\
 00deeea38e1f"],
+
+Cell[CellGroupData[{
+
+Cell["Modulus", "Subsection",
+ CellChangeTimes->{{3.8674231470978165`*^9, 
+  3.867423148037813*^9}},ExpressionUUID->"18f686b8-c8bc-4e26-b9b1-\
+06149612dd31"],
+
+Cell["Compute a determinant using arithmetic modulo 47:", "Text",
+ CellChangeTimes->{{3.8674231496758013`*^9, 
+  3.867423156401763*^9}},ExpressionUUID->"01262d27-0d05-4781-93fe-\
+740ff1d7e1d1"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"m", "=", 
+   RowBox[{"RandomInteger", "[", 
+    RowBox[{"46", ",", 
+     RowBox[{"{", 
+      RowBox[{"100", ",", "100"}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8674231580115414`*^9, 3.867423164737297*^9}},
+ CellLabel->
+  "In[102]:=",ExpressionUUID->"e37b9015-83f9-4ad5-8d04-6388a7a243d9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Det", "[", 
+  RowBox[{"m", ",", 
+   RowBox[{"Modulus", "\[Rule]", "47"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8674231656212907`*^9, 3.867423170610256*^9}},
+ CellLabel->
+  "In[103]:=",ExpressionUUID->"88e972ab-c0ff-452c-8868-4078bbf4e807"],
+
+Cell[BoxData["9"], "Output",
+ CellChangeTimes->{3.86742317095726*^9},
+ CellLabel->
+  "Out[103]=",ExpressionUUID->"8c152ea8-fc69-4b60-9885-a60cbb342f75"]
+}, Open  ]],
+
+Cell["This faster than computing Mod[Det[m],47]:", "Text",
+ CellChangeTimes->{{3.867423172292245*^9, 
+  3.8674231795256543`*^9}},ExpressionUUID->"11ab5713-d4ba-43a1-8a99-\
+60ef0516c66a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mod", "[", 
+  RowBox[{
+   RowBox[{"Det", "[", "m", "]"}], ",", "47"}], "]"}]], "Input",
+ CellChangeTimes->{{3.867423180676649*^9, 3.8674231839836245`*^9}},
+ CellLabel->
+  "In[104]:=",ExpressionUUID->"e55a4cd7-4396-42d8-9f63-87e4c6439cae"],
+
+Cell[BoxData["9"], "Output",
+ CellChangeTimes->{3.8674231843406196`*^9},
+ CellLabel->
+  "Out[104]=",ExpressionUUID->"7901e3ba-5c64-4edf-9d8e-4868ff21490e"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
 
 Cell["Applications", "Section",
  CellChangeTimes->{{3.8674229554776154`*^9, 
@@ -766,9 +830,25 @@ Cell[23997, 691, 299, 6, 28, "Input",ExpressionUUID->"a27612d6-9130-466e-be71-dc
 Cell[24299, 699, 149, 2, 32, "Output",ExpressionUUID->"1c7f6f4d-ef53-4c87-9d11-80748c4fe3da"]
 }, Open  ]]
 }, Open  ]],
-Cell[24475, 705, 154, 3, 67, "Section",ExpressionUUID->"ff2ca552-7f25-4b85-9796-00deeea38e1f"],
-Cell[24632, 710, 161, 3, 53, "Section",ExpressionUUID->"0110fa97-141a-4330-8e57-d32a03088a6e"],
-Cell[24796, 715, 167, 3, 53, "Section",ExpressionUUID->"e0466fa1-a88e-4a8e-908b-157b03bc32cd"]
+Cell[CellGroupData[{
+Cell[24497, 707, 154, 3, 67, "Section",ExpressionUUID->"ff2ca552-7f25-4b85-9796-00deeea38e1f"],
+Cell[CellGroupData[{
+Cell[24676, 714, 157, 3, 53, "Subsection",ExpressionUUID->"18f686b8-c8bc-4e26-b9b1-06149612dd31"],
+Cell[24836, 719, 193, 3, 34, "Text",ExpressionUUID->"01262d27-0d05-4781-93fe-740ff1d7e1d1"],
+Cell[25032, 724, 342, 9, 28, "Input",ExpressionUUID->"e37b9015-83f9-4ad5-8d04-6388a7a243d9"],
+Cell[CellGroupData[{
+Cell[25399, 737, 267, 6, 28, "Input",ExpressionUUID->"88e972ab-c0ff-452c-8868-4078bbf4e807"],
+Cell[25669, 745, 152, 3, 32, "Output",ExpressionUUID->"8c152ea8-fc69-4b60-9885-a60cbb342f75"]
+}, Open  ]],
+Cell[25836, 751, 186, 3, 34, "Text",ExpressionUUID->"11ab5713-d4ba-43a1-8a99-60ef0516c66a"],
+Cell[CellGroupData[{
+Cell[26047, 758, 262, 6, 28, "Input",ExpressionUUID->"e55a4cd7-4396-42d8-9f63-87e4c6439cae"],
+Cell[26312, 766, 155, 3, 32, "Output",ExpressionUUID->"7901e3ba-5c64-4edf-9d8e-4868ff21490e"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[26506, 774, 161, 3, 67, "Section",ExpressionUUID->"0110fa97-141a-4330-8e57-d32a03088a6e"],
+Cell[26670, 779, 167, 3, 53, "Section",ExpressionUUID->"e0466fa1-a88e-4a8e-908b-157b03bc32cd"]
 }, Open  ]]
 }
 ]
