@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5121,        166]
-NotebookOptionsPosition[      3954,        137]
-NotebookOutlinePosition[      4297,        152]
-CellTagsIndexPosition[      4254,        149]
+NotebookDataLength[      8491,        260]
+NotebookOptionsPosition[      6439,        215]
+NotebookOutlinePosition[      6782,        230]
+CellTagsIndexPosition[      6739,        227]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -132,6 +132,84 @@ Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.8673522342506647`*^9, 
   3.8673522368698187`*^9}},ExpressionUUID->"ee187c92-c6c1-45a4-9e84-\
 f63fa8aa3017"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Options", "Section",
+ CellChangeTimes->{{3.86735231623101*^9, 
+  3.8673523168680067`*^9}},ExpressionUUID->"0939afb3-0788-4926-a078-\
+d5c169156a94"],
+
+Cell[CellGroupData[{
+
+Cell["WorkingPrecision", "Subsection",
+ CellChangeTimes->{{3.8673523193299913`*^9, 
+  3.867352321652975*^9}},ExpressionUUID->"5d0c1640-4427-4469-896b-\
+0a8e2a10d51d"],
+
+Cell["A Hilbert matrix with machine-number entries:", "Text",
+ CellChangeTimes->{{3.8673523237209616`*^9, 
+  3.867352330578377*^9}},ExpressionUUID->"f871fb0c-6752-424f-8b6a-\
+bfaeb4145290"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HilbertMatrix", "[", 
+  RowBox[{"3", ",", 
+   RowBox[{"WorkingPrecision", "\[Rule]", "MachinePrecision"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8673523321073685`*^9, 3.8673523422328663`*^9}},
+ CellLabel->"In[91]:=",ExpressionUUID->"7e80a13f-05c3-4693-bf97-dd302f3ef62b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1.`", ",", "0.5`", ",", "0.3333333333333333`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.5`", ",", "0.3333333333333333`", ",", "0.25`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0.3333333333333333`", ",", "0.25`", ",", "0.2`"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.867352342706862*^9},
+ CellLabel->"Out[91]=",ExpressionUUID->"7d6e7c46-66a8-4475-8b62-1783a275b2a0"]
+}, Open  ]],
+
+Cell["A Hilbert matrix with 24-digit precision entries:", "Text",
+ CellChangeTimes->{{3.8673523440808554`*^9, 
+  3.8673523592718654`*^9}},ExpressionUUID->"6663a897-6545-4e7f-9209-\
+97fbd85aaf17"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HilbertMatrix", "[", 
+  RowBox[{"3", ",", 
+   RowBox[{"WorkingPrecision", "\[Rule]", "24"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8673523321073685`*^9, 3.867352366390425*^9}},
+ CellLabel->"In[92]:=",ExpressionUUID->"4101b38e-35a1-4521-8ff3-43bf5a886835"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "1.`24.", ",", "0.5`24.", ",", 
+     "0.33333333333333333333333333333333333333`24."}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.5`24.", ",", "0.33333333333333333333333333333333333333`24.", ",", 
+     "0.25`24."}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.33333333333333333333333333333333333333`24.", ",", "0.25`24.", ",", 
+     "0.2`24."}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8673523667694225`*^9},
+ CellLabel->"Out[92]=",ExpressionUUID->"146e15e7-38fb-4695-bd5d-5c54c534ec28"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -166,6 +244,22 @@ Cell[2421, 85, 297, 6, 28, "Input",ExpressionUUID->"cf1d16e8-eacd-46fc-a916-0bdc
 Cell[2721, 93, 1034, 34, 106, "Output",ExpressionUUID->"ca8a3db8-f4b3-4f80-bef1-dd40b21e32b9"]
 }, Open  ]],
 Cell[3770, 130, 156, 3, 28, "Input",ExpressionUUID->"ee187c92-c6c1-45a4-9e84-f63fa8aa3017"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3963, 138, 153, 3, 67, "Section",ExpressionUUID->"0939afb3-0788-4926-a078-d5c169156a94"],
+Cell[CellGroupData[{
+Cell[4141, 145, 166, 3, 53, "Subsection",ExpressionUUID->"5d0c1640-4427-4469-896b-0a8e2a10d51d"],
+Cell[4310, 150, 189, 3, 34, "Text",ExpressionUUID->"f871fb0c-6752-424f-8b6a-bfaeb4145290"],
+Cell[CellGroupData[{
+Cell[4524, 157, 301, 6, 28, "Input",ExpressionUUID->"7e80a13f-05c3-4693-bf97-dd302f3ef62b"],
+Cell[4828, 165, 457, 11, 32, "Output",ExpressionUUID->"7d6e7c46-66a8-4475-8b62-1783a275b2a0"]
+}, Open  ]],
+Cell[5300, 179, 195, 3, 34, "Text",ExpressionUUID->"6663a897-6545-4e7f-9209-97fbd85aaf17"],
+Cell[CellGroupData[{
+Cell[5520, 186, 282, 5, 28, "Input",ExpressionUUID->"4101b38e-35a1-4521-8ff3-43bf5a886835"],
+Cell[5805, 193, 582, 16, 71, "Output",ExpressionUUID->"146e15e7-38fb-4695-bd5d-5c54c534ec28"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
