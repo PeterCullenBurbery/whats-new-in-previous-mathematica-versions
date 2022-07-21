@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14275,        423]
-NotebookOptionsPosition[     10569,        352]
-NotebookOutlinePosition[     10911,        367]
-CellTagsIndexPosition[     10868,        364]
+NotebookDataLength[     19203,        553]
+NotebookOptionsPosition[     14825,        470]
+NotebookOutlinePosition[     15167,        485]
+CellTagsIndexPosition[     15124,        482]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -347,6 +347,124 @@ Cell[BoxData[
  CellChangeTimes->{3.8673569249593782`*^9},
  CellLabel->"Out[52]=",ExpressionUUID->"04539ab7-a22c-4290-b0d3-dda2eb561743"]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Neat Examples", "Section",
+ CellChangeTimes->{{3.867356966908693*^9, 
+  3.867356967617687*^9}},ExpressionUUID->"dc625104-0d7f-4539-93cd-\
+8ace9f544e13"],
+
+Cell["Subdiagonal and superdiagonals:", "Text",
+ CellChangeTimes->{{3.867356969542674*^9, 
+  3.8673569746428304`*^9}},ExpressionUUID->"11e1ae24-5f5d-458d-bf44-\
+3fc37bc5d9da"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "@", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Diagonal", "[", 
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{"x", ",", 
+        RowBox[{"{", "10", "}"}], ",", 
+        RowBox[{"{", "10", "}"}]}], "]"}], ",", "k"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"k", ",", 
+      RowBox[{"-", "9"}], ",", "9"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8673569757758193`*^9, 3.8673569792317924`*^9}, {
+  3.867357089939722*^9, 3.8673571025888553`*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"01c1521e-98e0-477f-bdc0-26dd32373567"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"x", "", "", "", "", "", "", "", "", ""},
+    {"x", "x", "", "", "", "", "", "", "", ""},
+    {"x", "x", "x", "", "", "", "", "", "", ""},
+    {"x", "x", "x", "x", "", "", "", "", "", ""},
+    {"x", "x", "x", "x", "x", "", "", "", "", ""},
+    {"x", "x", "x", "x", "x", "x", "", "", "", ""},
+    {"x", "x", "x", "x", "x", "x", "x", "", "", ""},
+    {"x", "x", "x", "x", "x", "x", "x", "x", "", ""},
+    {"x", "x", "x", "x", "x", "x", "x", "x", "x", ""},
+    {"x", "x", "x", "x", "x", "x", "x", "x", "x", "x"},
+    {"x", "x", "x", "x", "x", "x", "x", "x", "x", ""},
+    {"x", "x", "x", "x", "x", "x", "x", "x", "", ""},
+    {"x", "x", "x", "x", "x", "x", "x", "", "", ""},
+    {"x", "x", "x", "x", "x", "x", "", "", "", ""},
+    {"x", "x", "x", "x", "x", "", "", "", "", ""},
+    {"x", "x", "x", "x", "", "", "", "", "", ""},
+    {"x", "x", "x", "", "", "", "", "", "", ""},
+    {"x", "x", "", "", "", "", "", "", "", ""},
+    {"x", "", "", "", "", "", "", "", "", ""}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.8673571031328506`*^9},
+ CellLabel->"Out[53]=",ExpressionUUID->"067088ec-dac2-437f-983c-ce78dc08ba8d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"{", "10", "}"}], ",", 
+   RowBox[{"{", "10", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8673571050374074`*^9, 3.867357118718302*^9}},
+ CellLabel->"In[54]:=",ExpressionUUID->"00f52082-444e-42af-8083-d7331b81f290"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x",
+      ",", "x", ",", "x"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x",
+      ",", "x", ",", "x"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x",
+      ",", "x", ",", "x"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x",
+      ",", "x", ",", "x"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x",
+      ",", "x", ",", "x"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x",
+      ",", "x", ",", "x"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x",
+      ",", "x", ",", "x"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x",
+      ",", "x", ",", "x"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x",
+      ",", "x", ",", "x"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x", ",", "x",
+      ",", "x", ",", "x"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.867357121319285*^9},
+ CellLabel->"Out[54]=",ExpressionUUID->"f7d86fa8-cd3e-49a2-ad36-73eca22b6a22"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -422,6 +540,18 @@ Cell[9798, 326, 204, 4, 32, "Output",ExpressionUUID->"49927231-05a4-4c50-8004-4c
 Cell[CellGroupData[{
 Cell[10039, 335, 281, 6, 28, "Input",ExpressionUUID->"425c6afb-6256-4917-b228-97c44855f836"],
 Cell[10323, 343, 206, 4, 32, "Output",ExpressionUUID->"04539ab7-a22c-4290-b0d3-dda2eb561743"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10578, 353, 158, 3, 67, "Section",ExpressionUUID->"dc625104-0d7f-4539-93cd-8ace9f544e13"],
+Cell[10739, 358, 175, 3, 34, "Text",ExpressionUUID->"11e1ae24-5f5d-458d-bf44-3fc37bc5d9da"],
+Cell[CellGroupData[{
+Cell[10939, 365, 588, 15, 28, "Input",ExpressionUUID->"01c1521e-98e0-477f-bdc0-26dd32373567"],
+Cell[11530, 382, 1253, 26, 337, "Output",ExpressionUUID->"067088ec-dac2-437f-983c-ce78dc08ba8d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12820, 413, 288, 6, 28, "Input",ExpressionUUID->"00f52082-444e-42af-8083-d7331b81f290"],
+Cell[13111, 421, 1674, 44, 90, "Output",ExpressionUUID->"f7d86fa8-cd3e-49a2-ad36-73eca22b6a22"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
