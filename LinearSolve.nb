@@ -1,0 +1,77 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2110,         67]
+NotebookOptionsPosition[      1409,         48]
+NotebookOutlinePosition[      1753,         63]
+CellTagsIndexPosition[      1710,         60]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["LinearSolve", "Title",
+ CellChangeTimes->{{3.8674296464814835`*^9, 
+  3.8674296486534653`*^9}},ExpressionUUID->"7554ef88-0db6-4c43-8ae3-\
+e4425e916387"],
+
+Cell["Basic Examples", "Section",
+ CellChangeTimes->{{3.8674296512374487`*^9, 
+  3.867429654591428*^9}},ExpressionUUID->"e2c888e9-fdf1-40b2-9d92-\
+eb763cfdf9cb"],
+
+Cell["Options", "Section",
+ CellChangeTimes->{{3.8674296614280086`*^9, 
+  3.8674296621280036`*^9}},ExpressionUUID->"622c08f8-6ffe-403b-a292-\
+aeeea64da80e"],
+
+Cell["Applications", "Section",
+ CellChangeTimes->{{3.8674296634359984`*^9, 
+  3.867429664756988*^9}},ExpressionUUID->"425469a6-71c4-4a41-9260-\
+04a6e6d02aa7"],
+
+Cell["Properties & Relations", "Section",
+ CellChangeTimes->{{3.867429666852975*^9, 
+  3.867429670152526*^9}},ExpressionUUID->"71d8603a-b016-4717-87e7-\
+19325caaf8f7"]
+}, Open  ]]
+},
+WindowSize->{860, 771},
+WindowMargins->{{Automatic, -126}, {Automatic, 33}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 158, 3, 96, "Title",ExpressionUUID->"7554ef88-0db6-4c43-8ae3-e4425e916387"],
+Cell[741, 27, 161, 3, 67, "Section",ExpressionUUID->"e2c888e9-fdf1-40b2-9d92-eb763cfdf9cb"],
+Cell[905, 32, 156, 3, 53, "Section",ExpressionUUID->"622c08f8-6ffe-403b-a292-aeeea64da80e"],
+Cell[1064, 37, 159, 3, 53, "Section",ExpressionUUID->"425469a6-71c4-4a41-9260-04a6e6d02aa7"],
+Cell[1226, 42, 167, 3, 53, "Section",ExpressionUUID->"71d8603a-b016-4717-87e7-19325caaf8f7"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
