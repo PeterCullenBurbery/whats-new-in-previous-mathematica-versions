@@ -10,17 +10,123 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[       761,         33]
-NotebookOptionsPosition[       561,         21]
-NotebookOutlinePosition[       901,         36]
-CellTagsIndexPosition[       858,         33]
+NotebookDataLength[      4950,        156]
+NotebookOptionsPosition[      3785,        127]
+NotebookOutlinePosition[      4125,        142]
+CellTagsIndexPosition[      4082,        139]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
+Cell["UpperTriangularize", "Title",
+ CellChangeTimes->{{3.867419474717862*^9, 
+  3.867419478720835*^9}},ExpressionUUID->"db8a9cfc-1c02-4298-afe1-\
+9f808e487b71"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "Section",
+ CellChangeTimes->{{3.867419482455813*^9, 
+  3.867419484206803*^9}},ExpressionUUID->"d01238cd-b661-4cc8-8108-\
+557c08da1fb5"],
+
+Cell["Get the upper triangular part of a matrix:", "Text",
+ CellChangeTimes->{{3.8674194855587935`*^9, 
+  3.867419492532112*^9}},ExpressionUUID->"28b50645-15d0-4a16-8d4e-\
+8e994364846e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatrixForm", "[", 
+  RowBox[{"UpperTriangularize", "[", 
+   RowBox[{"RandomInteger", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "9"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "3"}], "}"}]}], "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.867419494039096*^9, 3.8674195160625257`*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"33d5a6f4-993c-414b-affa-24b9b3a69521"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"8", "7", "7"},
+     {"0", "9", "5"},
+     {"0", "0", "3"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.8674195166372128`*^9},
+ CellLabel->
+  "Out[18]//MatrixForm=",ExpressionUUID->"32a15f76-2781-4027-87e8-\
+1796d879a755"]
+}, Open  ]],
+
+Cell["Get the strictly upper triangular part of a matrix:", "Text",
+ CellChangeTimes->{{3.8674195193915577`*^9, 
+  3.8674195298920603`*^9}},ExpressionUUID->"7de037d4-2c35-47bd-a605-\
+6b4e0b3f3c64"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatrixForm", "[", 
+  RowBox[{"UpperTriangularize", "[", 
+   RowBox[{
+    RowBox[{"RandomInteger", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "9"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "3"}], "}"}]}], "]"}], ",", "1"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.867419494039096*^9, 3.867419536900031*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"e02be44f-9503-4d97-8769-56d02022344b"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"0", "9", "1"},
+     {"0", "0", "1"},
+     {"0", "0", "0"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.8674195373050137`*^9},
+ CellLabel->
+  "Out[20]//MatrixForm=",ExpressionUUID->"d246bdca-2ebf-461b-8280-\
+4bdc5f2af273"]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Properties & Relations", "Section",
+ CellChangeTimes->{{3.867419553681595*^9, 
+  3.867419558877136*^9}},ExpressionUUID->"d036dae7-1b52-46a9-8383-\
+4ce8dda58063"]
+}, Open  ]]
 },
 WindowSize->{860, 771},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowMargins->{{Automatic, 8}, {Automatic, 5}},
 FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
@@ -35,9 +141,24 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 161, 3, 96, "Title",ExpressionUUID->"db8a9cfc-1c02-4298-afe1-9f808e487b71"],
+Cell[CellGroupData[{
+Cell[766, 29, 159, 3, 67, "Section",ExpressionUUID->"d01238cd-b661-4cc8-8108-557c08da1fb5"],
+Cell[928, 34, 186, 3, 34, "Text",ExpressionUUID->"28b50645-15d0-4a16-8d4e-8e994364846e"],
+Cell[CellGroupData[{
+Cell[1139, 41, 427, 10, 28, "Input",ExpressionUUID->"33d5a6f4-993c-414b-affa-24b9b3a69521"],
+Cell[1569, 53, 654, 20, 79, "Output",ExpressionUUID->"32a15f76-2781-4027-87e8-1796d879a755"]
+}, Open  ]],
+Cell[2238, 76, 197, 3, 34, "Text",ExpressionUUID->"7de037d4-2c35-47bd-a605-6b4e0b3f3c64"],
+Cell[CellGroupData[{
+Cell[2460, 83, 458, 12, 28, "Input",ExpressionUUID->"e02be44f-9503-4d97-8769-56d02022344b"],
+Cell[2921, 97, 654, 20, 79, "Output",ExpressionUUID->"d246bdca-2ebf-461b-8280-4bdc5f2af273"]
+}, Open  ]]
+}, Open  ]],
+Cell[3602, 121, 167, 3, 67, "Section",ExpressionUUID->"d036dae7-1b52-46a9-8383-4ce8dda58063"]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
